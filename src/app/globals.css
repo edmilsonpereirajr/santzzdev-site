@@ -1284,7 +1284,7 @@ button {
 .portfolio-screenshot img {
   width: 100%;
   height: 100%;
-  object-fit: cover !important;
+  object-fit: contain !important;
   object-position: center;
 }
 
