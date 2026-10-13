@@ -1272,3 +1272,24 @@ button {
     transition: none;
   }
 }
+
+/* AJUSTE DO ENQUADRAMENTO DO PORTFÓLIO */
+
+.portfolio-screenshot {
+  aspect-ratio: 16 / 9;
+  background: #101010;
+  overflow: hidden;
+}
+
+.portfolio-screenshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: center;
+}
+
+@media (max-width: 600px) {
+  .portfolio-screenshot {
+    aspect-ratio: 16 / 9;
+  }
+}
