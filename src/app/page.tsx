@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Home() {
   return (
     <main>
@@ -112,51 +113,71 @@ export default function Home() {
         </div>
 
         <div className="portfolio-grid">
-          <article className="portfolio-card">
-            <div className="portfolio-preview portfolio-preview-squad">
-              <span className="portfolio-tag">PROJETO AUTORAL</span>
-              <span className="portfolio-preview-title">SquadScope</span>
-              <span className="portfolio-preview-description">
-                Inteligência para o competitivo de Free Fire
-              </span>
-            </div>
+          
+<article className="portfolio-card">
+  <a
+    className="portfolio-screenshot"
+    href="https://testesquadscope01.lovable.app"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Abrir o SquadScope em uma nova aba"
+  >
+    <Image
+  src="/images/squadscope.png"
+  alt="Captura real da plataforma SquadScope"
+  width={1200}
+  height={750}
+  sizes="(max-width: 700px) 100vw, 50vw"
+  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+  loading="lazy"
+/>
+    <span className="portfolio-open">Visitar projeto ↗</span>
+  </a>
 
-            <div className="portfolio-info">
-              <p className="portfolio-category">ANÁLISE · ESPORTS</p>
-              <h3>SquadScope</h3>
-              <p>
-                Plataforma voltada para análise de desempenho e estatísticas
-                de equipes competitivas de Free Fire.
-              </p>
-              <span className="portfolio-status">
-                Em desenvolvimento
-              </span>
-            </div>
-          </article>
+  <div className="portfolio-info">
+    <p className="portfolio-category">ANÁLISE · ESPORTS</p>
+    <h3>SquadScope</h3>
+    <p>
+      Plataforma de análise de desempenho e estatísticas
+      para equipes competitivas de Free Fire.
+    </p>
+    <span className="portfolio-status">Projeto autoral</span>
+  </div>
+</article>
 
-          <article className="portfolio-card">
-            <div className="portfolio-preview portfolio-preview-musa">
-              <span className="portfolio-tag">PROJETO AUTORAL</span>
-              <span className="portfolio-preview-title">Musa</span>
-              <span className="portfolio-preview-description">
-                Criatividade que ganha forma
-              </span>
-            </div>
+<article className="portfolio-card">
+  <a
+    className="portfolio-screenshot"
+    href="https://musa-criacao-digital.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Abrir a Musa Criação Digital em uma nova aba"
+  >
+   <Image
+  src="/images/musa-criacao-digital.png"
+  alt="Captura real da loja Musa Criação Digital"
+  width={1200}
+  height={750}
+  sizes="(max-width: 700px) 100vw, 50vw"
+  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+  loading="lazy"
+/>
+    <span className="portfolio-open">Visitar projeto ↗</span>
+  </a>
 
-            <div className="portfolio-info">
-              <p className="portfolio-category">
-                E-COMMERCE · PRODUTOS DIGITAIS
-              </p>
-              <h3>Musa Criação Digital</h3>
-              <p>
-                Loja digital em desenvolvimento, planejada para apresentar
-                e comercializar produtos digitais.
-              </p>
-              <span className="portfolio-status">
-                Em desenvolvimento
-              </span>
-            </div>
-          </article>
+  <div className="portfolio-info">
+    <p className="portfolio-category">
+      E-COMMERCE · PRODUTOS DIGITAIS
+    </p>
+    <h3>Musa Criação Digital</h3>
+    <p>
+      Loja digital com identidade visual própria,
+      criada para apresentar e comercializar produtos digitais.
+    </p>
+    <span className="portfolio-status">Projeto em evolução</span>
+  </div>
+</article>
+
         </div>
       </section>
 
