@@ -1,4 +1,6 @@
+
 import Image from "next/image";
+
 export default function Home() {
   return (
     <main>
@@ -113,71 +115,95 @@ export default function Home() {
         </div>
 
         <div className="portfolio-grid">
-          
-<article className="portfolio-card">
-  <a
-    className="portfolio-screenshot"
-    href="https://testesquadscope01.lovable.app"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Abrir o SquadScope em uma nova aba"
-  >
-    <Image
-  src="/images/squadscope.png"
-  alt="Captura real da plataforma SquadScope"
-  width={1200}
-  height={750}
-  sizes="(max-width: 700px) 100vw, 50vw"
-  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-  loading="lazy"
-/>
-    <span className="portfolio-open">Visitar projeto ↗</span>
-  </a>
+          <article className="portfolio-card">
+            <a
+              className="portfolio-screenshot"
+              href="https://testesquadscope01.lovable.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visitar o SquadScope em uma nova aba"
+            >
+              <Image
+                src="/images/squadscope.png"
+                alt="Captura real da plataforma SquadScope"
+                width={1200}
+                height={750}
+                sizes="(max-width: 700px) 100vw, 50vw"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+                loading="lazy"
+              />
 
-  <div className="portfolio-info">
-    <p className="portfolio-category">ANÁLISE · ESPORTS</p>
-    <h3>SquadScope</h3>
-    <p>
-      Plataforma de análise de desempenho e estatísticas
-      para equipes competitivas de Free Fire.
-    </p>
-    <span className="portfolio-status">Projeto autoral</span>
-  </div>
-</article>
+              <span className="portfolio-open">
+                Visitar projeto ↗
+              </span>
+            </a>
 
-<article className="portfolio-card">
-  <a
-    className="portfolio-screenshot"
-    href="https://musa-criacao-digital.vercel.app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Abrir a Musa Criação Digital em uma nova aba"
-  >
-   <Image
-  src="/images/musa-criacao-digital.png"
-  alt="Captura real da loja Musa Criação Digital"
-  width={1200}
-  height={750}
-  sizes="(max-width: 700px) 100vw, 50vw"
-  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-  loading="lazy"
-/>
-    <span className="portfolio-open">Visitar projeto ↗</span>
-  </a>
+            <div className="portfolio-info">
+              <p className="portfolio-category">
+                ANÁLISE · ESPORTS
+              </p>
 
-  <div className="portfolio-info">
-    <p className="portfolio-category">
-      E-COMMERCE · PRODUTOS DIGITAIS
-    </p>
-    <h3>Musa Criação Digital</h3>
-    <p>
-      Loja digital com identidade visual própria,
-      criada para apresentar e comercializar produtos digitais.
-    </p>
-    <span className="portfolio-status">Projeto em evolução</span>
-  </div>
-</article>
+              <h3>SquadScope</h3>
 
+              <p>
+                Plataforma de análise de desempenho e estatísticas
+                para equipes competitivas de Free Fire.
+              </p>
+
+              <span className="portfolio-status">
+                Em desenvolvimento
+              </span>
+            </div>
+          </article>
+
+          <article className="portfolio-card">
+            <a
+              className="portfolio-screenshot"
+              href="https://musa-criacao-digital.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visitar a Musa Criação Digital em uma nova aba"
+            >
+              <Image
+                src="/images/musa-criacao-digital.png"
+                alt="Captura real da loja Musa Criação Digital"
+                width={1200}
+                height={750}
+                sizes="(max-width: 700px) 100vw, 50vw"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+                loading="lazy"
+              />
+
+              <span className="portfolio-open">
+                Visitar projeto ↗
+              </span>
+            </a>
+
+            <div className="portfolio-info">
+              <p className="portfolio-category">
+                E-COMMERCE · PRODUTOS DIGITAIS
+              </p>
+
+              <h3>Musa Criação Digital</h3>
+
+              <p>
+                Loja digital com identidade visual própria,
+                criada para apresentar e comercializar produtos digitais.
+              </p>
+
+              <span className="portfolio-status">
+                Projeto em evolução
+              </span>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -200,9 +226,7 @@ export default function Home() {
         <div className="service-grid">
           <article className="service-card">
             <span className="service-number">01 / PRESENÇA DIGITAL</span>
-            <span className="service-icon" aria-hidden="true">
-              ↗
-            </span>
+            <span className="service-icon" aria-hidden="true">↗</span>
 
             <h3>Sites institucionais</h3>
 
@@ -218,9 +242,7 @@ export default function Home() {
 
           <article className="service-card">
             <span className="service-number">02 / CONVERSÃO</span>
-            <span className="service-icon" aria-hidden="true">
-              ◎
-            </span>
+            <span className="service-icon" aria-hidden="true">◎</span>
 
             <h3>Landing pages</h3>
 
@@ -236,9 +258,7 @@ export default function Home() {
 
           <article className="service-card">
             <span className="service-number">03 / SOLUÇÕES DIGITAIS</span>
-            <span className="service-icon" aria-hidden="true">
-              ⌘
-            </span>
+            <span className="service-icon" aria-hidden="true">⌘</span>
 
             <h3>Projetos personalizados</h3>
 
@@ -256,7 +276,9 @@ export default function Home() {
 
       <section className="about section" id="sobre">
         <div className="about-content">
-          <p className="eyebrow">QUEM ESTÁ POR TRÁS DA SANTZZDEV</p>
+          <p className="eyebrow">
+            QUEM ESTÁ POR TRÁS DA SANTZZDEV
+          </p>
 
           <h2>
             Desenvolvimento próximo.
@@ -345,7 +367,9 @@ export default function Home() {
 
       <section className="contact section" id="contato">
         <div className="contact-panel">
-          <p className="eyebrow">SEU PRÓXIMO PASSO COMEÇA AQUI</p>
+          <p className="eyebrow">
+            SEU PRÓXIMO PASSO COMEÇA AQUI
+          </p>
 
           <h2>
             Vamos tirar sua
@@ -374,7 +398,11 @@ export default function Home() {
       </section>
 
       <footer className="site-footer">
-        <a className="brand" href="#" aria-label="SantzzDev, voltar ao início">
+        <a
+          className="brand"
+          href="#"
+          aria-label="SantzzDev, voltar ao início"
+        >
           Santzz<span>Dev</span>
           <span className="brand-dot">.</span>
         </a>
