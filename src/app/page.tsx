@@ -303,7 +303,35 @@ export default function Home() {
           </a>
         </div>
       </section>
+              <section className="technologies section" id="tecnologias">
+        <div className="section-heading">
+          <p className="eyebrow">FERRAMENTAS E TECNOLOGIAS</p>
 
+          <h2>
+            Construindo com
+            <br />
+            <span>tecnologia.</span>
+          </h2>
+
+          <p className="section-description">
+            Tecnologias que utilizo nos meus estudos e projetos de desenvolvimento.
+          </p>
+        </div>
+
+        <div className="technology-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Next.js</span>
+          <span>Tailwind CSS</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>Supabase</span>
+        </div>
+      </section>
+      
       <section className="process section" id="processo">
         <div className="process-intro">
           <p className="eyebrow">COMO EU TRABALHO</p>

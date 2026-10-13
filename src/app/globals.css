@@ -1297,3 +1297,40 @@ button {
     aspect-ratio: 16 / 9;
   }
 }
+  /* SEÇÃO DE TECNOLOGIAS */
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.technology-list span {
+  padding: 12px 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 14px;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.technology-list span:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .technology-list {
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .technology-list span {
+    padding: 10px 13px;
+    font-size: 13px;
+  }
+}
