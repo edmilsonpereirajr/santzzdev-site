@@ -132,7 +132,7 @@ export default function Home() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  objectFit: "cover",
+                  objectFit: "contain",
                 }}
                 loading="lazy"
               />
@@ -177,7 +177,7 @@ export default function Home() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  objectFit: "cover",
+                  objectFit: "contain",
                 }}
                 loading="lazy"
               />

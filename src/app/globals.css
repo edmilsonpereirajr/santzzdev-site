@@ -1139,3 +1139,34 @@ button {
     transition: none;
   }
 }
+
+
+.portfolio-screenshot {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 8 / 5;
+  overflow: hidden;
+  background: #101010;
+}
+
+.portfolio-screenshot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  object-position: center;
+}
+
+.portfolio-open {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 2;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #151515;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
