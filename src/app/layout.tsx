@@ -1,4 +1,4 @@
-
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
@@ -37,7 +37,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={geist.variable}>
-      <body>{children}</body>
+      <body>
+  {children}
+  <Analytics />
+</body>
     </html>
   );
 }
