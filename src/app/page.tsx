@@ -1,4 +1,3 @@
-
 export default function Home() {
   return (
     <main>
@@ -9,7 +8,9 @@ export default function Home() {
         </a>
 
         <nav className="navigation" aria-label="Navegação principal">
+          <a href="#portfolio">Portfólio</a>
           <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre mim</a>
           <a href="#processo">Processo</a>
           <a href="#contato">Contato</a>
         </nav>
@@ -23,38 +24,42 @@ export default function Home() {
         <div className="hero-content">
           <p className="eyebrow">
             <span className="status-dot" />
-            DESENVOLVIMENTO WEB · SANTZZDEV
+            DESENVOLVIMENTO INDEPENDENTE · SANTZZDEV
           </p>
 
           <h1>
-            Sua ideia,
+            Ideias que
             <br />
-            nossa <span>solução.</span>
+            ganham <span>forma.</span>
           </h1>
 
           <p className="hero-description">
-            Criamos experiências digitais modernas para transformar ideias
-            em oportunidades. Seu negócio merece uma presença digital à altura.
+            Desenvolvo sites e soluções digitais para negócios e projetos
+            que precisam sair da ideia. Você conversa diretamente comigo,
+            do planejamento à entrega.
           </p>
 
           <div className="hero-actions">
             <a className="button-primary" href="#contato">
-              Começar um projeto <span aria-hidden="true">↗</span>
+              Tirar meu projeto do papel{" "}
+              <span aria-hidden="true">↗</span>
             </a>
+
             <a className="button-secondary" href="#servicos">
-              Conhecer serviços <span aria-hidden="true">↓</span>
+              Explorar serviços <span aria-hidden="true">↓</span>
             </a>
           </div>
 
           <div className="hero-note">
             <span className="note-line" />
-            Design cuidadoso. Código de qualidade. Foco no seu negócio.
+            Atendimento direto. Soluções pensadas para cada projeto.
           </div>
         </div>
 
         <div
           className="hero-visual"
-          aria-label="Ilustração abstrata de tecnologia"
+          role="img"
+          aria-label="Representação visual de ideias transformadas em soluções digitais"
         >
           <div className="visual-grid" />
           <div className="visual-orbit orbit-one" />
@@ -62,24 +67,24 @@ export default function Home() {
 
           <div className="visual-core">
             <span className="core-symbol">&lt;/&gt;</span>
-            <span className="core-label">IDEIAS EM CÓDIGO</span>
+            <span className="core-label">IDEIA EM CONSTRUÇÃO</span>
           </div>
 
           <div className="floating-card card-top">
             <span className="card-indicator" />
-            <span>Experiências digitais</span>
+            <span>Projeto personalizado</span>
           </div>
 
           <div className="floating-card card-bottom">
             <span className="code-mark">{"{ }"}</span>
             <span>
-              <strong>Feito para você</strong>
-              <small>Soluções sob medida</small>
+              <strong>Do seu jeito</strong>
+              <small>Desenvolvimento sob medida</small>
             </span>
           </div>
 
           <span className="visual-caption">
-            CRIATIVIDADE + TECNOLOGIA
+            PLANEJAR · DESENVOLVER · ENTREGAR
           </span>
         </div>
 
@@ -90,14 +95,81 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="portfolio section" id="portfolio">
+        <div className="section-heading">
+          <p className="eyebrow">PROJETOS AUTORAIS</p>
+
+          <h2>
+            Ideias reais.
+            <br />
+            <span>Em construção.</span>
+          </h2>
+
+          <p className="section-description">
+            Conheça projetos que estou desenvolvendo para transformar ideias
+            em experiências digitais.
+          </p>
+        </div>
+
+        <div className="portfolio-grid">
+          <article className="portfolio-card">
+            <div className="portfolio-preview portfolio-preview-squad">
+              <span className="portfolio-tag">PROJETO AUTORAL</span>
+              <span className="portfolio-preview-title">SquadScope</span>
+              <span className="portfolio-preview-description">
+                Inteligência para o competitivo de Free Fire
+              </span>
+            </div>
+
+            <div className="portfolio-info">
+              <p className="portfolio-category">ANÁLISE · ESPORTS</p>
+              <h3>SquadScope</h3>
+              <p>
+                Plataforma voltada para análise de desempenho e estatísticas
+                de equipes competitivas de Free Fire.
+              </p>
+              <span className="portfolio-status">
+                Em desenvolvimento
+              </span>
+            </div>
+          </article>
+
+          <article className="portfolio-card">
+            <div className="portfolio-preview portfolio-preview-musa">
+              <span className="portfolio-tag">PROJETO AUTORAL</span>
+              <span className="portfolio-preview-title">Musa</span>
+              <span className="portfolio-preview-description">
+                Criatividade que ganha forma
+              </span>
+            </div>
+
+            <div className="portfolio-info">
+              <p className="portfolio-category">
+                E-COMMERCE · PRODUTOS DIGITAIS
+              </p>
+              <h3>Musa Criação Digital</h3>
+              <p>
+                Loja digital em desenvolvimento, planejada para apresentar
+                e comercializar produtos digitais.
+              </p>
+              <span className="portfolio-status">
+                Em desenvolvimento
+              </span>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section className="services section" id="servicos">
         <div className="section-heading">
-          <p className="eyebrow">O QUE FAZEMOS</p>
+          <p className="eyebrow">O QUE EU FAÇO</p>
+
           <h2>
             Tecnologia que trabalha
             <br />
             a favor do <span>seu negócio.</span>
           </h2>
+
           <p className="section-description">
             Soluções digitais pensadas para apresentar sua marca,
             conquistar clientes e facilitar o dia a dia.
@@ -107,12 +179,17 @@ export default function Home() {
         <div className="service-grid">
           <article className="service-card">
             <span className="service-number">01 / PRESENÇA DIGITAL</span>
-            <span className="service-icon" aria-hidden="true">↗</span>
+            <span className="service-icon" aria-hidden="true">
+              ↗
+            </span>
+
             <h3>Sites institucionais</h3>
+
             <p>
               Apresente sua empresa com profissionalismo, clareza e uma
               experiência que funciona em celulares e computadores.
             </p>
+
             <a href="#contato">
               Conversar sobre meu site <span>↗</span>
             </a>
@@ -120,12 +197,17 @@ export default function Home() {
 
           <article className="service-card">
             <span className="service-number">02 / CONVERSÃO</span>
-            <span className="service-icon" aria-hidden="true">◎</span>
+            <span className="service-icon" aria-hidden="true">
+              ◎
+            </span>
+
             <h3>Landing pages</h3>
+
             <p>
               Páginas focadas em um objetivo, com mensagem clara e caminhos
               simples para o visitante entrar em contato.
             </p>
+
             <a href="#contato">
               Criar minha página <span>↗</span>
             </a>
@@ -133,27 +215,62 @@ export default function Home() {
 
           <article className="service-card">
             <span className="service-number">03 / SOLUÇÕES DIGITAIS</span>
-            <span className="service-icon" aria-hidden="true">⌘</span>
+            <span className="service-icon" aria-hidden="true">
+              ⌘
+            </span>
+
             <h3>Projetos personalizados</h3>
+
             <p>
               Catálogos digitais e funcionalidades planejadas conforme
               as necessidades e os objetivos de cada projeto.
             </p>
+
             <a href="#contato">
-              Discutir uma ideia <span>↗</span>
+              Discutir minha ideia <span>↗</span>
             </a>
           </article>
         </div>
       </section>
 
+      <section className="about section" id="sobre">
+        <div className="about-content">
+          <p className="eyebrow">QUEM ESTÁ POR TRÁS DA SANTZZDEV</p>
+
+          <h2>
+            Desenvolvimento próximo.
+            <br />
+            <span>Soluções personalizadas.</span>
+          </h2>
+
+          <p>
+            Sou desenvolvedor independente e criei a SantzzDev para transformar
+            ideias em projetos digitais funcionais. Trabalho diretamente com
+            cada cliente para entender suas necessidades e construir soluções
+            alinhadas aos seus objetivos.
+          </p>
+
+          <p>
+            Meu foco é unir tecnologia, organização e uma experiência simples
+            para quem vai usar o projeto.
+          </p>
+
+          <a className="button-secondary" href="#contato">
+            Vamos conversar <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
       <section className="process section" id="processo">
         <div className="process-intro">
-          <p className="eyebrow">COMO TRABALHAMOS</p>
+          <p className="eyebrow">COMO EU TRABALHO</p>
+
           <h2>
-            Do primeiro papo
+            Da primeira conversa
             <br />
             ao <span>projeto no ar.</span>
           </h2>
+
           <p className="section-description">
             Um processo transparente, com alinhamento antes do desenvolvimento
             e atenção a cada etapa.
@@ -166,7 +283,7 @@ export default function Home() {
             <div>
               <h3>Entendimento</h3>
               <p>
-                Conhecemos sua ideia, seu público e o que você precisa resolver.
+                Conheço sua ideia, seu público e o que você precisa resolver.
               </p>
             </div>
           </article>
@@ -176,7 +293,8 @@ export default function Home() {
             <div>
               <h3>Planejamento</h3>
               <p>
-                Definimos escopo, estrutura, prazo e investimento antes de começar.
+                Defino o escopo, a estrutura, o prazo e o investimento antes
+                de começar.
               </p>
             </div>
           </article>
@@ -186,7 +304,7 @@ export default function Home() {
             <div>
               <h3>Desenvolvimento</h3>
               <p>
-                Construímos a solução e validamos os detalhes com você.
+                Desenvolvo a solução e valido os detalhes com você.
               </p>
             </div>
           </article>
@@ -196,7 +314,8 @@ export default function Home() {
             <div>
               <h3>Entrega</h3>
               <p>
-                Revisamos o projeto e orientamos os próximos passos para publicação.
+                Revisamos o projeto e alinhamos os próximos passos para
+                publicação.
               </p>
             </div>
           </article>
@@ -206,29 +325,29 @@ export default function Home() {
       <section className="contact section" id="contato">
         <div className="contact-panel">
           <p className="eyebrow">SEU PRÓXIMO PASSO COMEÇA AQUI</p>
+
           <h2>
             Vamos tirar sua
             <br />
             ideia do <span>papel?</span>
           </h2>
+
           <p>
-            Conta pra gente o que você está planejando. Vamos conversar
-            sobre a solução mais adequada para o seu projeto.
+            Conte sua ideia. Vou entender o que você precisa e conversar
+            com você sobre a melhor solução para o seu projeto.
           </p>
-         
 
-<a
-  className="button-primary"
-  href="https://wa.me/5582991501145?text=Ol%C3%A1%2C%20SantzzDev!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Falar pelo WhatsApp <span aria-hidden="true">↗</span>
-</a>
-
+          <a
+            className="button-primary"
+            href="https://wa.me/5582991501145?text=Ol%C3%A1%2C%20SantzzDev!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Falar pelo WhatsApp <span aria-hidden="true">↗</span>
+          </a>
 
           <small>
-             Atendimento direto pelo WhatsApp para conversar sobre seu projeto.
+            Atendimento direto pelo WhatsApp para conversar sobre seu projeto.
           </small>
         </div>
       </section>
@@ -238,7 +357,9 @@ export default function Home() {
           Santzz<span>Dev</span>
           <span className="brand-dot">.</span>
         </a>
-        <p>Sua ideia, nossa solução.</p>
+
+        <p>Ideias que ganham forma.</p>
+
         <span>
           © {new Date().getFullYear()} SantzzDev. Todos os direitos reservados.
         </span>
