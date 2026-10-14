@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  openGraph: {
+     openGraph: {
     type: "website",
     locale: "pt_BR",
     url: "https://santzzdev-site.vercel.app/",
@@ -30,14 +30,22 @@ export const metadata: Metadata = {
     title: "SantzzDev | Criação de Sites e Soluções Digitais",
     description:
       "Sites profissionais, landing pages e soluções digitais personalizadas. Tire sua ideia do papel com atendimento direto.",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        alt: "SantzzDev | Criação de Sites e Soluções Digitais",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "SantzzDev | Criação de Sites e Soluções Digitais",
     description:
       "Sites profissionais, landing pages e soluções digitais personalizadas para negócios e projetos.",
+    images: ["/opengraph-image.png"],
   },
 };
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
