@@ -185,19 +185,20 @@ export default function Home() {
               rel="noopener noreferrer"
               aria-label="Visitar projeto: Musa Criação Digital (abre em nova aba)"
             >
-              <Image
-                src="/images/musa-criacao-digital.png"
-                alt="Captura real da loja Musa Criação Digital"
-                width={1200}
-                height={750}
-                sizes="(max-width: 700px) 100vw, 50vw"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                }}
-                loading="lazy"
-              />
+<Image
+  src="/images/musa-criacao-digital.png"
+  alt="Captura real da loja Musa Criação Digital"
+  width={1200}
+  height={750}
+  sizes="(max-width: 700px) 100vw, 50vw"
+  style={{
+    width: "100%",
+    height: "100%",
+    objectFit: "contain",
+  }}
+  loading="eager"
+/>
+
 
               <span className="portfolio-open">Visitar projeto ↗</span>
             </a>

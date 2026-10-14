@@ -1079,100 +1079,9 @@ button {
 }
 
 
-/* CAPTURAS REAIS DO PORTFÓLIO */
-
-.portfolio-screenshot {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  aspect-ratio: 16 / 10;
-  background: var(--surface);
-}
-
-.portfolio-screenshot img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  transition: transform 0.4s ease;
-}
-
-.portfolio-screenshot:hover img {
-  transform: scale(1.03);
-}
-
-.portfolio-open {
-  position: absolute;
-  right: 14px;
-  bottom: 14px;
-  padding: 10px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  background: #151515;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 600;
-  opacity: 0;
-  transform: translateY(5px);
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
-}
-
-.portfolio-screenshot:hover .portfolio-open,
-.portfolio-screenshot:focus-visible .portfolio-open {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (hover: none) {
-  .portfolio-open {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .portfolio-screenshot img,
-  .portfolio-open {
-    transition: none;
-  }
-}
-
-
-.portfolio-screenshot {
-  position: relative;
-  display: block;
-  width: 100%;
-  aspect-ratio: 8 / 5;
-  overflow: hidden;
-  background: #101010;
-}
-
-.portfolio-screenshot img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain !important;
-  object-position: center;
-}
-
-.portfolio-open {
-  position: absolute;
-  right: 14px;
-  bottom: 14px;
-  z-index: 2;
-  padding: 10px 14px;
-  border-radius: 8px;
-  background: #151515;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-
-/* ACABAMENTO PROFISSIONAL DO PORTFÓLIO */
+/* ==============================
+   CAPTURAS E CARDS DO PORTFÓLIO
+============================== */
 
 .portfolio-card {
   position: relative;
@@ -1192,20 +1101,22 @@ button {
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
 }
 
+/* Capturas dos projetos */
+
 .portfolio-screenshot {
   position: relative;
   display: block;
   width: 100%;
-  aspect-ratio: 8 / 5;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: #101010;
+  background: #0b1013;
 }
 
 .portfolio-screenshot img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain !important;
+  object-fit: contain;
   object-position: center;
   transition: transform 0.35s ease;
 }
@@ -1213,6 +1124,8 @@ button {
 .portfolio-card:hover .portfolio-screenshot img {
   transform: scale(1.02);
 }
+
+/* Botão para visitar o projeto */
 
 .portfolio-open {
   position: absolute;
@@ -1226,7 +1139,11 @@ button {
   color: #fff;
   font-size: 12px;
   font-weight: 600;
+  opacity: 0;
+  transform: translateY(5px);
   transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
     background 0.25s ease,
     color 0.25s ease;
 }
@@ -1235,12 +1152,16 @@ button {
 .portfolio-screenshot:focus-visible .portfolio-open {
   background: var(--accent);
   color: #151515;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .portfolio-screenshot:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
+
+/* Ajustes para telas menores */
 
 @media (max-width: 600px) {
   .portfolio-grid {
@@ -1264,6 +1185,17 @@ button {
     font-size: 11px;
   }
 }
+
+/* Botão sempre visível em dispositivos com toque */
+
+@media (hover: none) {
+  .portfolio-open {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Respeita a preferência por movimento reduzido */
 
 @media (prefers-reduced-motion: reduce) {
   .portfolio-card,
