@@ -10,7 +10,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://santzzdev.com.br"),
+  metadataBase: new URL("https://santzzdev-site.vercel.app"),
   title: {
     default: "SantzzDev | Sua ideia, nossa solução",
     template: "%s | SantzzDev",
