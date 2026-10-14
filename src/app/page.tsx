@@ -1,7 +1,31 @@
-
 import Image from "next/image";
+import {
+  siHtml5,
+  siCss,
+  siJavascript,
+  siTypescript,
+  siReact,
+  siNextdotjs,
+  siTailwindcss,
+  siGit,
+  siGithub,
+  siSupabase,
+} from "simple-icons";
 
 export default function Home() {
+  const technologies = [
+    { name: "HTML", icon: siHtml5 },
+    { name: "CSS", icon: siCss },
+    { name: "JavaScript", icon: siJavascript },
+    { name: "TypeScript", icon: siTypescript },
+    { name: "React", icon: siReact },
+    { name: "Next.js", icon: siNextdotjs },
+    { name: "Tailwind CSS", icon: siTailwindcss },
+    { name: "Git", icon: siGit },
+    { name: "GitHub", icon: siGithub },
+    { name: "Supabase", icon: siSupabase },
+  ];
+
   return (
     <main>
       <header className="site-header">
@@ -31,9 +55,9 @@ export default function Home() {
           </p>
 
           <h1>
-            Ideias que
+            Sites que
             <br />
-            ganham <span>forma.</span>
+            transformam <span>ideias.</span>
           </h1>
 
           <p className="hero-description">
@@ -137,16 +161,11 @@ export default function Home() {
                 loading="lazy"
               />
 
-              <span className="portfolio-open">
-                Visitar projeto ↗
-              </span>
+              <span className="portfolio-open">Visitar projeto ↗</span>
             </a>
 
             <div className="portfolio-info">
-              <p className="portfolio-category">
-                ANÁLISE · ESPORTS
-              </p>
-
+              <p className="portfolio-category">ANÁLISE · ESPORTS</p>
               <h3>SquadScope</h3>
 
               <p>
@@ -154,9 +173,7 @@ export default function Home() {
                 para equipes competitivas de Free Fire.
               </p>
 
-              <span className="portfolio-status">
-                Em desenvolvimento
-              </span>
+              <span className="portfolio-status">Em desenvolvimento</span>
             </div>
           </article>
 
@@ -182,9 +199,7 @@ export default function Home() {
                 loading="lazy"
               />
 
-              <span className="portfolio-open">
-                Visitar projeto ↗
-              </span>
+              <span className="portfolio-open">Visitar projeto ↗</span>
             </a>
 
             <div className="portfolio-info">
@@ -199,9 +214,7 @@ export default function Home() {
                 criada para apresentar e comercializar produtos digitais.
               </p>
 
-              <span className="portfolio-status">
-                Projeto em evolução
-              </span>
+              <span className="portfolio-status">Projeto em evolução</span>
             </div>
           </article>
         </div>
@@ -276,9 +289,7 @@ export default function Home() {
 
       <section className="about section" id="sobre">
         <div className="about-content">
-          <p className="eyebrow">
-            QUEM ESTÁ POR TRÁS DA SANTZZDEV
-          </p>
+          <p className="eyebrow">QUEM ESTÁ POR TRÁS DA SANTZZDEV</p>
 
           <h2>
             Desenvolvimento próximo.
@@ -303,7 +314,8 @@ export default function Home() {
           </a>
         </div>
       </section>
-              <section className="technologies section" id="tecnologias">
+
+      <section className="technologies section" id="tecnologias">
         <div className="section-heading">
           <p className="eyebrow">FERRAMENTAS E TECNOLOGIAS</p>
 
@@ -319,19 +331,25 @@ export default function Home() {
         </div>
 
         <div className="technology-list">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>TypeScript</span>
-          <span>React</span>
-          <span>Next.js</span>
-          <span>Tailwind CSS</span>
-          <span>Git</span>
-          <span>GitHub</span>
-          <span>Supabase</span>
+          {technologies.map((tech) => (
+            <span key={tech.name}>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill={`#${tech.icon.hex}`}
+                aria-hidden="true"
+                style={{ flexShrink: 0 }}
+              >
+                <path d={tech.icon.path} />
+              </svg>
+
+              {tech.name}
+            </span>
+          ))}
         </div>
       </section>
-      
+
       <section className="process section" id="processo">
         <div className="process-intro">
           <p className="eyebrow">COMO EU TRABALHO</p>
@@ -395,9 +413,7 @@ export default function Home() {
 
       <section className="contact section" id="contato">
         <div className="contact-panel">
-          <p className="eyebrow">
-            SEU PRÓXIMO PASSO COMEÇA AQUI
-          </p>
+          <p className="eyebrow">SEU PRÓXIMO PASSO COMEÇA AQUI</p>
 
           <h2>
             Vamos tirar sua
