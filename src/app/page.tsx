@@ -55,25 +55,25 @@ export default function Home() {
           </p>
 
           <h1>
-            Sites que
+            Sites profissionais
             <br />
-            transformam <span>ideias.</span>
+            para seu <span>negócio.</span>
           </h1>
 
           <p className="hero-description">
-            Desenvolvo sites e soluções digitais para negócios e projetos
-            que precisam sair da ideia. Você conversa diretamente comigo,
-            do planejamento à entrega.
+            Crio sites institucionais e landing pages para empresas e pequenos
+            negócios que precisam de uma presença digital profissional. Você
+            conversa diretamente comigo, do planejamento à publicação.
           </p>
 
           <div className="hero-actions">
             <a className="button-primary" href="#contato">
-              Tirar meu projeto do papel{" "}
+              Solicitar um orçamento{" "}
               <span aria-hidden="true">↗</span>
             </a>
 
             <a className="button-secondary" href="#servicos">
-              Explorar serviços <span aria-hidden="true">↓</span>
+              Conhecer os serviços <span aria-hidden="true">↓</span>
             </a>
           </div>
 
@@ -169,8 +169,8 @@ export default function Home() {
               <h3>SquadScope</h3>
 
               <p>
-                Plataforma de análise de desempenho e estatísticas
-                para equipes competitivas de Free Fire.
+                Plataforma de análise de desempenho e estatísticas para equipes
+                competitivas de Free Fire.
               </p>
 
               <span className="portfolio-status">Em desenvolvimento</span>
@@ -210,8 +210,8 @@ export default function Home() {
               <h3>Musa Criação Digital</h3>
 
               <p>
-                Loja digital com identidade visual própria,
-                criada para apresentar e comercializar produtos digitais.
+                Loja digital com identidade visual própria, criada para
+                apresentar e comercializar produtos digitais.
               </p>
 
               <span className="portfolio-status">Projeto em evolução</span>
@@ -231,15 +231,17 @@ export default function Home() {
           </h2>
 
           <p className="section-description">
-            Soluções digitais pensadas para apresentar sua marca,
-            conquistar clientes e facilitar o dia a dia.
+            Soluções digitais pensadas para apresentar sua marca, conquistar
+            clientes e facilitar o dia a dia.
           </p>
         </div>
 
         <div className="service-grid">
           <article className="service-card">
             <span className="service-number">01 / PRESENÇA DIGITAL</span>
-            <span className="service-icon" aria-hidden="true">↗</span>
+            <span className="service-icon" aria-hidden="true">
+              ↗
+            </span>
 
             <h3>Sites institucionais</h3>
 
@@ -255,7 +257,9 @@ export default function Home() {
 
           <article className="service-card">
             <span className="service-number">02 / CONVERSÃO</span>
-            <span className="service-icon" aria-hidden="true">◎</span>
+            <span className="service-icon" aria-hidden="true">
+              ◎
+            </span>
 
             <h3>Landing pages</h3>
 
@@ -271,13 +275,15 @@ export default function Home() {
 
           <article className="service-card">
             <span className="service-number">03 / SOLUÇÕES DIGITAIS</span>
-            <span className="service-icon" aria-hidden="true">⌘</span>
+            <span className="service-icon" aria-hidden="true">
+              ⌘
+            </span>
 
             <h3>Projetos personalizados</h3>
 
             <p>
-              Catálogos digitais e funcionalidades planejadas conforme
-              as necessidades e os objetivos de cada projeto.
+              Catálogos digitais e funcionalidades planejadas conforme as
+              necessidades e os objetivos de cada projeto.
             </p>
 
             <a href="#contato">
@@ -326,7 +332,8 @@ export default function Home() {
           </h2>
 
           <p className="section-description">
-            Tecnologias que utilizo nos meus estudos e projetos de desenvolvimento.
+            Tecnologias que utilizo nos meus estudos e projetos de
+            desenvolvimento.
           </p>
         </div>
 
@@ -392,9 +399,7 @@ export default function Home() {
             <span>03</span>
             <div>
               <h3>Desenvolvimento</h3>
-              <p>
-                Desenvolvo a solução e valido os detalhes com você.
-              </p>
+              <p>Desenvolvo a solução e valido os detalhes com você.</p>
             </div>
           </article>
 
@@ -416,14 +421,12 @@ export default function Home() {
           <p className="eyebrow">SEU PRÓXIMO PASSO COMEÇA AQUI</p>
 
           <h2>
-            Vamos tirar sua
-            <br />
-            ideia do <span>papel?</span>
+            Vamos conversar sobre seu <span>projeto?</span>
           </h2>
 
           <p>
-            Conte sua ideia. Vou entender o que você precisa e conversar
-            com você sobre a melhor solução para o seu projeto.
+            Conte o que você precisa. Vou entender seus objetivos e conversar
+            com você sobre a melhor solução, o escopo e o orçamento.
           </p>
 
           <a
@@ -432,7 +435,8 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Falar pelo WhatsApp <span aria-hidden="true">↗</span>
+            Solicitar orçamento pelo WhatsApp{" "}
+            <span aria-hidden="true">↗</span>
           </a>
 
           <small>
