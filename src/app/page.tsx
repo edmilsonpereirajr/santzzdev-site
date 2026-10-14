@@ -145,7 +145,7 @@ export default function Home() {
               href="https://testesquadscope01.lovable.app"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Visitar o SquadScope em uma nova aba"
+              aria-label="Visitar projeto: SquadScope (abre em nova aba)"
             >
               <Image
                 src="/images/squadscope.png"
@@ -183,7 +183,7 @@ export default function Home() {
               href="https://musa-criacao-digital.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Visitar a Musa Criação Digital em uma nova aba"
+              aria-label="Visitar projeto: Musa Criação Digital (abre em nova aba)"
             >
               <Image
                 src="/images/musa-criacao-digital.png"
