@@ -12,18 +12,32 @@ const geist = Geist({
 export const metadata: Metadata = {
   metadataBase: new URL("https://santzzdev-site.vercel.app"),
   title: {
-    default: "SantzzDev | Sua ideia, nossa solução",
+    default: "SantzzDev | Criação de Sites e Soluções Digitais",
     template: "%s | SantzzDev",
   },
   description:
-    "Desenvolvimento de sites modernos, responsivos e profissionais para transformar ideias em oportunidades de negócio.",
+    "Desenvolvimento de sites profissionais, landing pages e soluções digitais personalizadas para negócios e projetos. Atendimento direto do planejamento à entrega.",
   applicationName: "SantzzDev",
   robots: {
     index: true,
     follow: true,
   },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "https://santzzdev-site.vercel.app/",
+    siteName: "SantzzDev",
+    title: "SantzzDev | Criação de Sites e Soluções Digitais",
+    description:
+      "Sites profissionais, landing pages e soluções digitais personalizadas. Tire sua ideia do papel com atendimento direto.",
+  },
+  twitter: {
+    card: "summary",
+    title: "SantzzDev | Criação de Sites e Soluções Digitais",
+    description:
+      "Sites profissionais, landing pages e soluções digitais personalizadas para negócios e projetos.",
+  },
 };
-
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
