@@ -61,9 +61,8 @@ export default function Home() {
           </h1>
 
           <p className="hero-description">
-            Crio sites institucionais e landing pages para empresas e pequenos
-            negócios que precisam de uma presença digital profissional. Você
-            conversa diretamente comigo, do planejamento à publicação.
+             Conheça projetos que demonstram como transformo ideias em soluções
+            digitais, de plataformas personalizadas a lojas virtuais.
           </p>
 
           <div className="hero-actions">
@@ -169,8 +168,8 @@ export default function Home() {
               <h3>SquadScope</h3>
 
               <p>
-                Plataforma de análise de desempenho e estatísticas para equipes
-                competitivas de Free Fire.
+                Plataforma voltada à análise de desempenho de equipes de Free Fire,
+               com estatísticas e recursos para acompanhamento competitivo.
               </p>
 
               <span className="portfolio-status">Em desenvolvimento</span>
@@ -211,8 +210,8 @@ export default function Home() {
               <h3>Musa Criação Digital</h3>
 
               <p>
-                Loja digital com identidade visual própria, criada para
-                apresentar e comercializar produtos digitais.
+                Loja digital desenvolvida para apresentar produtos digitais com
+              identidade visual própria e uma experiência de compra organizada.
               </p>
 
               <span className="portfolio-status">Projeto em evolução</span>
@@ -432,7 +431,7 @@ export default function Home() {
 
           <a
             className="button-primary"
-            href="https://wa.me/5582991501145?text=Ol%C3%A1%2C%20SantzzDev!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+            href="https://wa.me/5582991501145?text=Ol%C3%A1%2C%20SantzzDev!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.%0A%0ATipo%20de%20projeto%3A%0AO%20que%20preciso%3A%0AObjetivo%20do%20projeto%3A"
             target="_blank"
             rel="noopener noreferrer"
           >
