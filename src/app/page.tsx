@@ -307,58 +307,105 @@ export default function Home() {
           </article>
         </div>
       </section>
-  </ScrollReveal>
+  </ScrollReveal> 
 
-     <ScrollReveal>
-      <section className="about section" id="sobre">
-        <div className="about-visual" aria-hidden="true">
-          <div className="about-visual-grid" />
-          <div className="about-orbit about-orbit-one" />
-          <div className="about-orbit about-orbit-two" />
 
-          <div className="about-code-card">
-            <span className="about-code-label">SANTZZDEV / STUDIO</span>
-            <span className="about-code-line">
-              <i /> interface.tsx
-            </span>
-            <span className="about-code-line">
-              <i /> soluções digitais
-            </span>
-            <div className="about-code-divider" />
-            <span className="about-code-symbol">&lt;/&gt;</span>
-            <span className="about-code-status">
-              <i /> IDEIA TRANSFORMADA EM PROJETO
-            </span>
+      <ScrollReveal>
+        <section className="about section" id="sobre">
+          <div className="about-visual" aria-hidden="true">
+            <div className="about-visual-grid" />
+            <div className="about-orbit about-orbit-one" />
+            <div className="about-orbit about-orbit-two" />
+
+            <div className="about-code-card about-terminal">
+              <div className="about-terminal-header">
+                <div className="about-terminal-dots">
+                  <i />
+                  <i />
+                  <i />
+                </div>
+
+                <span>SANTZZDEV / DEV</span>
+
+                <span className="about-terminal-status">
+                  <i /> ONLINE
+                </span>
+              </div>
+
+              <div className="about-terminal-body">
+                <span className="about-terminal-prompt">
+                  <i>~</i> whoami
+                </span>
+
+                <h3>SantzzDev</h3>
+                <p>Desenvolvimento independente</p>
+
+                <div className="about-code-divider" />
+
+                <span className="about-terminal-prompt">
+                  <i>~</i> tech-stack
+                </span>
+
+                <div className="about-tech-logos">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d={siNextdotjs.path} />
+                  </svg>
+
+                  <svg viewBox="0 0 24 24">
+                    <path fill={`#${siReact.hex}`} d={siReact.path} />
+                  </svg>
+
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      fill={`#${siTypescript.hex}`}
+                      d={siTypescript.path}
+                    />
+                  </svg>
+
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      fill={`#${siTailwindcss.hex}`}
+                      d={siTailwindcss.path}
+                    />
+                  </svg>
+                </div>
+
+                <div className="about-code-divider" />
+
+                <span className="about-terminal-availability">
+                  <i /> Disponível para novos projetos
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div className="about-content">
-          <p className="eyebrow">QUEM ESTÁ POR TRÁS DA SANTZZDEV</p>
+          <div className="about-content">
+            <p className="eyebrow">QUEM ESTÁ POR TRÁS DA SANTZZDEV</p>
 
-          <h2>
-            Desenvolvimento próximo.
-            <br />
-            <span>Soluções personalizadas.</span>
-          </h2>
+            <h2>
+              Quem conversa com você
+              <br />
+              <span>é quem desenvolve.</span>
+            </h2>
 
-          <p>
-            Sou desenvolvedor independente e criei a SantzzDev para transformar
-            ideias em projetos digitais funcionais. Trabalho diretamente com
-            cada cliente para entender suas necessidades e construir soluções
-            alinhadas aos seus objetivos.
-          </p>
+            <p>
+              Sou Edmilson, desenvolvedor independente e criador da SantzzDev.
+              Desenvolvo sites e soluções digitais pensando no que cada projeto
+              realmente precisa, da primeira ideia até a entrega.
+            </p>
 
-          <p>
-            Meu foco é unir tecnologia, organização e uma experiência simples
-            para quem vai usar o projeto.
-          </p>
+            <p>
+              Você fala diretamente comigo, acompanha o processo e participa
+              das decisões. Sem intermediários e sem soluções genéricas.
+            </p>
 
-          <a className="button-secondary" href="#contato">
-            Vamos conversar <ArrowIcon />
-          </a>
-        </div>
-      </section>
-  </ScrollReveal>
+            <a className="button-secondary" href="#contato">
+              Vamos conversar <ArrowIcon />
+            </a>
+          </div>
+        </section>
+      </ScrollReveal>
+
 
   <ScrollReveal>
       <section className="technologies section" id="tecnologias">
