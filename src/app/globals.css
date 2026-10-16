@@ -1687,27 +1687,27 @@ button {
 @media (max-width: 560px) {
   .mobile-navigation {
     display: block;
+    flex: 0 0 auto;
   }
 
   .site-header {
-    gap: 12px;
+    gap: 8px;
+  }
+
+  .brand {
+    flex: 0 1 auto;
+    min-width: 0;
+    white-space: nowrap;
+    font-size: clamp(17px, 4.8vw, 22px);
   }
 
   .header-cta {
+    flex: 0 1 auto;
+    min-width: 0;
     margin-left: auto;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .mobile-menu-toggle,
-  .mobile-menu-toggle span,
-  .mobile-menu-links a,
-  .mobile-menu-arrow {
-    transition: none;
-  }
-
-  .mobile-menu-panel,
-  .mobile-menu-backdrop {
-    animation: none;
+    gap: 5px;
+    padding: 9px 8px;
+    font-size: 9px;
+    white-space: nowrap;
   }
 }
