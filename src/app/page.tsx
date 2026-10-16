@@ -35,6 +35,8 @@ export default function Home() {
           <span className="brand-dot">.</span>
         </a>
 
+        <MobileNavigation />
+
         <nav className="navigation" aria-label="Navegação principal">
           <a href="#portfolio">Portfólio</a>
           <a href="#servicos">Serviços</a>
@@ -43,7 +45,6 @@ export default function Home() {
           <a href="#contato">Contato</a>
         </nav>
 
-      <MobileNavigation />
         <a className="header-cta" href="#contato">
           Vamos conversar <span aria-hidden="true">↗</span>
         </a>

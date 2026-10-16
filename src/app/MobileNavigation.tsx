@@ -4,11 +4,11 @@
 import { useState } from "react";
 
 const links = [
-  { href: "#portfolio", label: "Portfólio" },
-  { href: "#servicos", label: "Serviços" },
-  { href: "#sobre", label: "Sobre mim" },
-  { href: "#processo", label: "Processo" },
-  { href: "#contato", label: "Contato" },
+  { href: "#portfolio", label: "Portfólio", number: "01" },
+  { href: "#servicos", label: "Serviços", number: "02" },
+  { href: "#sobre", label: "Sobre mim", number: "03" },
+  { href: "#processo", label: "Processo", number: "04" },
+  { href: "#contato", label: "Contato", number: "05" },
 ];
 
 export default function MobileNavigation() {
@@ -17,7 +17,7 @@ export default function MobileNavigation() {
   return (
     <div className="mobile-navigation">
       <button
-        className="mobile-menu-toggle"
+        className={`mobile-menu-toggle${isOpen ? " is-open" : ""}`}
         type="button"
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
@@ -30,21 +30,57 @@ export default function MobileNavigation() {
       </button>
 
       {isOpen && (
-        <nav
-          id="mobile-menu"
-          className="mobile-menu-panel"
-          aria-label="Navegação para celular"
-        >
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
+        <>
+          <button
+            className="mobile-menu-backdrop"
+            type="button"
+            aria-label="Fechar menu"
+            onClick={() => setIsOpen(false)}
+          />
+
+          <nav
+            id="mobile-menu"
+            className="mobile-menu-panel"
+            aria-label="Navegação para celular"
+          >
+            <div className="mobile-menu-heading">
+              <div>
+                <span className="mobile-menu-eyebrow">SANTZZDEV / MENU</span>
+                <p>Explore o site</p>
+              </div>
+
+              <button
+                className="mobile-menu-close"
+                type="button"
+                aria-label="Fechar menu"
+                onClick={() => setIsOpen(false)}
+              >
+                ×
+              </button>
+            </div>
+
+            <div className="mobile-menu-links">
+              {links.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                >
+                  <span className="mobile-menu-number">{link.number}</span>
+                  <span className="mobile-menu-label">{link.label}</span>
+                  <span className="mobile-menu-arrow" aria-hidden="true">
+                    ↗
+                  </span>
+                </a>
+              ))}
+            </div>
+
+            <div className="mobile-menu-footer">
+              <span className="mobile-menu-status" />
+              Disponível para novos projetos
+            </div>
+          </nav>
+        </>
       )}
     </div>
   );
