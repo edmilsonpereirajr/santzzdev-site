@@ -127,188 +127,188 @@ export default function Home() {
       </section>
 
       <ScrollReveal>
-      <section className="portfolio section" id="portfolio">
-        <div className="section-heading">
-          <p className="eyebrow">PROJETOS AUTORAIS</p>
+        <section className="portfolio section" id="portfolio">
+          <div className="section-heading">
+            <p className="eyebrow">PROJETOS AUTORAIS</p>
 
-          <h2>
-            Ideias reais.
-            <br />
-            <span>Em construção.</span>
-          </h2>
+            <h2>
+              Ideias reais.
+              <br />
+              <span>Em construção.</span>
+            </h2>
 
-          <p className="section-description">
-            Conheça projetos que estou desenvolvendo para transformar ideias
-            em experiências digitais.
-          </p>
-        </div>
+            <p className="section-description">
+              Conheça projetos que estou desenvolvendo para transformar ideias
+              em experiências digitais.
+            </p>
+          </div>
 
-        <div className="portfolio-grid">
-          <article className="portfolio-card">
-            <a
-              className="portfolio-screenshot"
-              href="https://testesquadscope01.lovable.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visitar projeto: SquadScope (abre em nova aba)"
-            >
-              <Image
-                src="/images/squadscope.png"
-                alt="Captura real da plataforma SquadScope"
-                width={1200}
-                height={750}
-                sizes="(max-width: 700px) 100vw, 50vw"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                }}
-                loading="lazy"
-              />
+          <div className="portfolio-grid">
+            <article className="portfolio-card">
+              <a
+                className="portfolio-screenshot"
+                href="https://testesquadscope01.lovable.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visitar projeto: SquadScope (abre em nova aba)"
+              >
+                <Image
+                  src="/images/squadscope.png"
+                  alt="Captura real da plataforma SquadScope"
+                  width={1200}
+                  height={750}
+                  sizes="(max-width: 700px) 100vw, 50vw"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
+                  loading="lazy"
+                />
 
-              <span className="portfolio-open">
-                Visitar projeto <ArrowIcon />
+                <span className="portfolio-open">
+                  Visitar projeto <ArrowIcon />
+                </span>
+              </a>
+
+              <div className="portfolio-info">
+                <p className="portfolio-category">ANÁLISE · ESPORTS</p>
+                <h3>SquadScope</h3>
+
+                <p>
+                  Plataforma voltada à análise de desempenho de equipes de Free
+                  Fire, com estatísticas e recursos para acompanhamento
+                  competitivo.
+                </p>
+
+                <span className="portfolio-status">Em desenvolvimento</span>
+              </div>
+            </article>
+
+            <article className="portfolio-card">
+              <a
+                className="portfolio-screenshot"
+                href="https://musa-criacao-digital.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visitar projeto: Musa Criação Digital (abre em nova aba)"
+              >
+                <Image
+                  src="/images/musa-criacao-digital.png"
+                  alt="Captura real da loja Musa Criação Digital"
+                  width={1200}
+                  height={750}
+                  sizes="(max-width: 700px) 100vw, 50vw"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
+                  loading="eager"
+                />
+
+                <span className="portfolio-open">
+                  Visitar projeto <ArrowIcon />
+                </span>
+              </a>
+
+              <div className="portfolio-info">
+                <p className="portfolio-category">
+                  E-COMMERCE · PRODUTOS DIGITAIS
+                </p>
+
+                <h3>Musa Criação Digital</h3>
+
+                <p>
+                  Loja digital desenvolvida para apresentar produtos digitais
+                  com identidade visual própria e uma experiência de compra
+                  organizada.
+                </p>
+
+                <span className="portfolio-status">Projeto em evolução</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <section className="services section" id="servicos">
+          <div className="section-heading">
+            <p className="eyebrow">O QUE EU FAÇO</p>
+
+            <h2>
+              Tecnologia que trabalha
+              <br />
+              a favor do <span>seu negócio.</span>
+            </h2>
+
+            <p className="section-description">
+              Soluções digitais pensadas para apresentar sua marca, conquistar
+              clientes e facilitar o dia a dia.
+            </p>
+          </div>
+
+          <div className="service-grid">
+            <article className="service-card">
+              <span className="service-number">01 / PRESENÇA DIGITAL</span>
+
+              <span className="service-icon" aria-hidden="true">
+                <ArrowIcon />
               </span>
-            </a>
 
-            <div className="portfolio-info">
-              <p className="portfolio-category">ANÁLISE · ESPORTS</p>
-              <h3>SquadScope</h3>
+              <h3>Sites institucionais</h3>
 
               <p>
-                Plataforma voltada à análise de desempenho de equipes de Free
-                Fire, com estatísticas e recursos para acompanhamento
-                competitivo.
+                Apresente sua empresa com profissionalismo, clareza e uma
+                experiência que funciona em celulares e computadores.
               </p>
 
-              <span className="portfolio-status">Em desenvolvimento</span>
-            </div>
-          </article>
+              <a href="#contato">
+                Conversar sobre meu site <ArrowIcon />
+              </a>
+            </article>
 
-          <article className="portfolio-card">
-            <a
-              className="portfolio-screenshot"
-              href="https://musa-criacao-digital.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visitar projeto: Musa Criação Digital (abre em nova aba)"
-            >
-              <Image
-                src="/images/musa-criacao-digital.png"
-                alt="Captura real da loja Musa Criação Digital"
-                width={1200}
-                height={750}
-                sizes="(max-width: 700px) 100vw, 50vw"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                }}
-                loading="eager"
-              />
+            <article className="service-card">
+              <span className="service-number">02 / CONVERSÃO</span>
 
-              <span className="portfolio-open">
-                Visitar projeto <ArrowIcon />
+              <span className="service-icon" aria-hidden="true">
+                ◎
               </span>
-            </a>
 
-            <div className="portfolio-info">
-              <p className="portfolio-category">
-                E-COMMERCE · PRODUTOS DIGITAIS
-              </p>
-
-              <h3>Musa Criação Digital</h3>
+              <h3>Landing pages</h3>
 
               <p>
-                Loja digital desenvolvida para apresentar produtos digitais
-                com identidade visual própria e uma experiência de compra
-                organizada.
+                Páginas focadas em um objetivo, com mensagem clara e caminhos
+                simples para o visitante entrar em contato.
               </p>
 
-              <span className="portfolio-status">Projeto em evolução</span>
-            </div>
-          </article>
-        </div>
-      </section>
-  </ScrollReveal>
-  <ScrollReveal>
-      <section className="services section" id="servicos">
-        <div className="section-heading">
-          <p className="eyebrow">O QUE EU FAÇO</p>
+              <a href="#contato">
+                Criar minha página <ArrowIcon />
+              </a>
+            </article>
 
-          <h2>
-            Tecnologia que trabalha
-            <br />
-            a favor do <span>seu negócio.</span>
-          </h2>
+            <article className="service-card">
+              <span className="service-number">03 / SOLUÇÕES DIGITAIS</span>
 
-          <p className="section-description">
-            Soluções digitais pensadas para apresentar sua marca, conquistar
-            clientes e facilitar o dia a dia.
-          </p>
-        </div>
+              <span className="service-icon" aria-hidden="true">
+                ⌘
+              </span>
 
-        <div className="service-grid">
-          <article className="service-card">
-            <span className="service-number">01 / PRESENÇA DIGITAL</span>
+              <h3>Projetos personalizados</h3>
 
-            <span className="service-icon" aria-hidden="true">
-              <ArrowIcon />
-            </span>
+              <p>
+                Catálogos digitais e funcionalidades planejadas conforme as
+                necessidades e os objetivos de cada projeto.
+              </p>
 
-            <h3>Sites institucionais</h3>
-
-            <p>
-              Apresente sua empresa com profissionalismo, clareza e uma
-              experiência que funciona em celulares e computadores.
-            </p>
-
-            <a href="#contato">
-              Conversar sobre meu site <ArrowIcon />
-            </a>
-          </article>
-
-          <article className="service-card">
-            <span className="service-number">02 / CONVERSÃO</span>
-
-            <span className="service-icon" aria-hidden="true">
-              ◎
-            </span>
-
-            <h3>Landing pages</h3>
-
-            <p>
-              Páginas focadas em um objetivo, com mensagem clara e caminhos
-              simples para o visitante entrar em contato.
-            </p>
-
-            <a href="#contato">
-              Criar minha página <ArrowIcon />
-            </a>
-          </article>
-
-          <article className="service-card">
-            <span className="service-number">03 / SOLUÇÕES DIGITAIS</span>
-
-            <span className="service-icon" aria-hidden="true">
-              ⌘
-            </span>
-
-            <h3>Projetos personalizados</h3>
-
-            <p>
-              Catálogos digitais e funcionalidades planejadas conforme as
-              necessidades e os objetivos de cada projeto.
-            </p>
-
-            <a href="#contato">
-              Discutir minha ideia <ArrowIcon />
-            </a>
-          </article>
-        </div>
-      </section>
-  </ScrollReveal> 
-
+              <a href="#contato">
+                Discutir minha ideia <ArrowIcon />
+              </a>
+            </article>
+          </div>
+        </section>
+      </ScrollReveal>
 
       <ScrollReveal>
         <section className="about section" id="sobre">
@@ -406,135 +406,135 @@ export default function Home() {
         </section>
       </ScrollReveal>
 
+      <ScrollReveal>
+        <section className="technologies section" id="tecnologias">
+          <div className="section-heading">
+            <p className="eyebrow">FERRAMENTAS E TECNOLOGIAS</p>
 
-  <ScrollReveal>
-      <section className="technologies section" id="tecnologias">
-        <div className="section-heading">
-          <p className="eyebrow">FERRAMENTAS E TECNOLOGIAS</p>
+            <h2>
+              Construindo com
+              <br />
+              <span>tecnologia.</span>
+            </h2>
 
-          <h2>
-            Construindo com
-            <br />
-            <span>tecnologia.</span>
-          </h2>
+            <p className="section-description">
+              Tecnologias que utilizo nos meus estudos e projetos de
+              desenvolvimento.
+            </p>
+          </div>
 
-          <p className="section-description">
-            Tecnologias que utilizo nos meus estudos e projetos de
-            desenvolvimento.
-          </p>
-        </div>
+          <div className="technology-list">
+            {technologies.map((tech) => (
+              <span key={tech.name}>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill={`#${tech.icon.hex}`}
+                  aria-hidden="true"
+                  style={{ flexShrink: 0 }}
+                >
+                  <path d={tech.icon.path} />
+                </svg>
 
-        <div className="technology-list">
-          {technologies.map((tech) => (
-            <span key={tech.name}>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill={`#${tech.icon.hex}`}
-                aria-hidden="true"
-                style={{ flexShrink: 0 }}
-              >
-                <path d={tech.icon.path} />
-              </svg>
+                {tech.name}
+              </span>
+            ))}
+          </div>
+        </section>
+      </ScrollReveal>
 
-              {tech.name}
-            </span>
-          ))}
-        </div>
-      </section>
+      <ScrollReveal>
+        <section className="process section" id="processo">
+          <div className="process-intro">
+            <p className="eyebrow">COMO EU TRABALHO</p>
 
-  </ScrollReveal> 
+            <h2>
+              Da primeira conversa
+              <br />
+              ao <span>projeto no ar.</span>
+            </h2>
 
-    <ScrollReveal>
-      <section className="process section" id="processo">
-        <div className="process-intro">
-          <p className="eyebrow">COMO EU TRABALHO</p>
+            <p className="section-description">
+              Um processo transparente, com alinhamento antes do desenvolvimento
+              e atenção a cada etapa.
+            </p>
+          </div>
 
-          <h2>
-            Da primeira conversa
-            <br />
-            ao <span>projeto no ar.</span>
-          </h2>
+          <div className="process-list">
+            <article className="process-step">
+              <span>01</span>
+              <div>
+                <h3>Entendimento</h3>
+                <p>
+                  Conheço sua ideia, seu público e o que você precisa resolver.
+                </p>
+              </div>
+            </article>
 
-          <p className="section-description">
-            Um processo transparente, com alinhamento antes do desenvolvimento
-            e atenção a cada etapa.
-          </p>
-        </div>
+            <article className="process-step">
+              <span>02</span>
+              <div>
+                <h3>Planejamento</h3>
+                <p>
+                  Defino o escopo, a estrutura, o prazo e o investimento antes
+                  de começar.
+                </p>
+              </div>
+            </article>
 
-        <div className="process-list">
-          <article className="process-step">
-            <span>01</span>
-            <div>
-              <h3>Entendimento</h3>
-              <p>
-                Conheço sua ideia, seu público e o que você precisa resolver.
-              </p>
-            </div>
-          </article>
+            <article className="process-step">
+              <span>03</span>
+              <div>
+                <h3>Desenvolvimento</h3>
+                <p>Desenvolvo a solução e valido os detalhes com você.</p>
+              </div>
+            </article>
 
-          <article className="process-step">
-            <span>02</span>
-            <div>
-              <h3>Planejamento</h3>
-              <p>
-                Defino o escopo, a estrutura, o prazo e o investimento antes
-                de começar.
-              </p>
-            </div>
-          </article>
+            <article className="process-step">
+              <span>04</span>
+              <div>
+                <h3>Entrega</h3>
+                <p>
+                  Revisamos o projeto e alinhamos os próximos passos para
+                  publicação.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </ScrollReveal>
 
-          <article className="process-step">
-            <span>03</span>
-            <div>
-              <h3>Desenvolvimento</h3>
-              <p>Desenvolvo a solução e valido os detalhes com você.</p>
-            </div>
-          </article>
+      <ScrollReveal>
+        <section className="contact section" id="contato">
+          <div className="contact-panel">
+            <p className="eyebrow">SEU PRÓXIMO PASSO COMEÇA AQUI</p>
 
-          <article className="process-step">
-            <span>04</span>
-            <div>
-              <h3>Entrega</h3>
-              <p>
-                Revisamos o projeto e alinhamos os próximos passos para
-                publicação.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-  </ScrollReveal>
-  <ScrollReveal>
-      <section className="contact section" id="contato">
-        <div className="contact-panel">
-          <p className="eyebrow">SEU PRÓXIMO PASSO COMEÇA AQUI</p>
+            <h2>
+              Vamos conversar sobre seu <span>projeto?</span>
+            </h2>
 
-          <h2>
-            Vamos conversar sobre seu <span>projeto?</span>
-          </h2>
+            <p>
+              Conte o que você precisa. Vou entender seus objetivos e conversar
+              com você sobre a melhor solução, o escopo e o orçamento.
+            </p>
 
-          <p>
-            Conte o que você precisa. Vou entender seus objetivos e conversar
-            com você sobre a melhor solução, o escopo e o orçamento.
-          </p>
+            <a
+              className="button-primary"
+              href="https://wa.me/5582991501145?text=Ol%C3%A1%2C%20SantzzDev!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.%0A%0ATipo%20de%20projeto%3A%0AO%20que%20preciso%3A%0AObjetivo%20do%20projeto%3A"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Solicitar orçamento pelo WhatsApp <ArrowIcon />
+            </a>
 
-          <a
-            className="button-primary"
-            href="https://wa.me/5582991501145?text=Ol%C3%A1%2C%20SantzzDev!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.%0A%0ATipo%20de%20projeto%3A%0AO%20que%20preciso%3A%0AObjetivo%20do%20projeto%3A"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Solicitar orçamento pelo WhatsApp <ArrowIcon />
-          </a>
+            <small>
+              Atendimento direto pelo WhatsApp para conversar sobre seu projeto.
+            </small>
+          </div>
+        </section>
+      </ScrollReveal>
 
-          <small>
-            Atendimento direto pelo WhatsApp para conversar sobre seu projeto.
-          </small>
-        </div>
-      </section>
-  </ScrollReveal>
       <footer className="site-footer">
         <a
           className="brand"
