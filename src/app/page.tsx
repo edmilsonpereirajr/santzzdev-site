@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MobileNavigation from "./MobileNavigation";
 import {
   siHtml5,
   siCss,
@@ -42,6 +43,7 @@ export default function Home() {
           <a href="#contato">Contato</a>
         </nav>
 
+      <MobileNavigation />
         <a className="header-cta" href="#contato">
           Vamos conversar <span aria-hidden="true">↗</span>
         </a>
@@ -293,7 +295,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="about section" id="sobre">
+              <section className="about section" id="sobre">
+            <div className="about-visual" aria-hidden="true">
+        <div className="about-visual-grid" />
+        <div className="about-orbit about-orbit-one" />
+        <div className="about-orbit about-orbit-two" />
+
+        <div className="about-code-card">
+          <span className="about-code-label">SANTZZDEV / STUDIO</span>
+          <span className="about-code-line"><i /> interface.tsx</span>
+          <span className="about-code-line"><i /> soluções digitais</span>
+          <div className="about-code-divider" />
+          <span className="about-code-symbol">&lt;/&gt;</span>
+          <span className="about-code-status">
+            <i /> IDEIA TRANSFORMADA EM PROJETO
+          </span>
+        </div>
+        </div>
+
         <div className="about-content">
           <p className="eyebrow">QUEM ESTÁ POR TRÁS DA SANTZZDEV</p>
 
