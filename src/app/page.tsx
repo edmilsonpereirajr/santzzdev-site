@@ -31,16 +31,16 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#" aria-label="SantzzDev, pÃ¡gina inicial">
+        <a className="brand" href="#" aria-label="SantzzDev, página inicial">
           Santzz<span>Dev</span>
           <span className="brand-dot">.</span>
         </a>
 
         <MobileNavigation />
 
-        <nav className="navigation" aria-label="NavegaÃ§Ã£o principal">
-          <a href="#portfolio">PortfÃ³lio</a>
-          <a href="#servicos">ServiÃ§os</a>
+        <nav className="navigation" aria-label="Navegação principal">
+          <a href="#portfolio">Portfólio</a>
+          <a href="#servicos">Serviços</a>
           <a href="#sobre">Sobre mim</a>
           <a href="#processo">Processo</a>
           <a href="#contato">Contato</a>
@@ -55,40 +55,40 @@ export default function Home() {
         <div className="hero-content">
           <p className="eyebrow">
             <span className="status-dot" />
-            DESENVOLVIMENTO INDEPENDENTE Â· SANTZZDEV
+            DESENVOLVIMENTO INDEPENDENTE · SANTZZDEV
           </p>
 
           <h1>
             Sites profissionais
             <br />
-            para seu <span>negÃ³cio.</span>
+            para seu <span>negócio.</span>
           </h1>
 
           <p className="hero-description">
-            ConheÃ§a projetos que demonstram como transformo ideias em soluÃ§Ãµes
+            Conheça projetos que demonstram como transformo ideias em soluções
             digitais, de plataformas personalizadas a lojas virtuais.
           </p>
 
           <div className="hero-actions">
             <a className="button-primary" href="#contato">
-              Solicitar um orÃ§amento <ArrowIcon />
+              Solicitar um orçamento <ArrowIcon />
             </a>
 
             <a className="button-secondary" href="#servicos">
-              Conhecer os serviÃ§os <ArrowIcon direction="down" />
+              Conhecer os Serviços <ArrowIcon direction="down" />
             </a>
           </div>
 
           <div className="hero-note">
             <span className="note-line" />
-            Atendimento direto. SoluÃ§Ãµes pensadas para cada projeto.
+            Atendimento direto. Soluções pensadas para cada projeto.
           </div>
         </div>
 
         <div
           className="hero-visual"
           role="img"
-          aria-label="RepresentaÃ§Ã£o visual de ideias transformadas em soluÃ§Ãµes digitais"
+          aria-label="Representação visual de ideias transformadas em soluções digitais"
         >
           <div className="visual-grid" />
           <div className="visual-orbit orbit-one" />
@@ -96,7 +96,7 @@ export default function Home() {
 
           <div className="visual-core">
             <span className="core-symbol">&lt;/&gt;</span>
-            <span className="core-label">IDEIA EM CONSTRUÃ‡ÃƒO</span>
+            <span className="core-label">IDEIA EM CONSTRUÇÃO</span>
           </div>
 
           <div className="floating-card card-top">
@@ -113,7 +113,7 @@ export default function Home() {
           </div>
 
           <span className="visual-caption">
-            PLANEJAR Â· DESENVOLVER Â· ENTREGAR
+            PLANEJAR · DESENVOLVER · ENTREGAR
           </span>
         </div>
 
@@ -131,12 +131,12 @@ export default function Home() {
           <h2>
             Ideias reais.
             <br />
-            <span>Em construÃ§Ã£o.</span>
+            <span>Em construção.</span>
           </h2>
 
           <p className="section-description">
-            ConheÃ§a projetos que estou desenvolvendo para transformar ideias
-            em experiÃªncias digitais.
+            Conheça projetos que estou desenvolvendo para transformar ideias
+            em experiências digitais.
           </p>
         </div>
 
@@ -169,12 +169,12 @@ export default function Home() {
             </a>
 
             <div className="portfolio-info">
-              <p className="portfolio-category">ANÃLISE Â· ESPORTS</p>
+              <p className="portfolio-category">ANÁLISE · ESPORTS</p>
               <h3>SquadScope</h3>
 
               <p>
-                Plataforma voltada Ã  anÃ¡lise de desempenho de equipes de Free
-                Fire, com estatÃ­sticas e recursos para acompanhamento
+                Plataforma voltada à análise de desempenho de equipes de Free
+                Fire, com estatísticas e recursos para acompanhamento
                 competitivo.
               </p>
 
@@ -188,11 +188,11 @@ export default function Home() {
               href="https://musa-criacao-digital.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Visitar projeto: Musa CriaÃ§Ã£o Digital (abre em nova aba)"
+              aria-label="Visitar projeto: Musa Criação Digital (abre em nova aba)"
             >
               <Image
                 src="/images/musa-criacao-digital.png"
-                alt="Captura real da loja Musa CriaÃ§Ã£o Digital"
+                alt="Captura real da loja Musa Criação Digital"
                 width={1200}
                 height={750}
                 sizes="(max-width: 700px) 100vw, 50vw"
@@ -211,18 +211,18 @@ export default function Home() {
 
             <div className="portfolio-info">
               <p className="portfolio-category">
-                E-COMMERCE Â· PRODUTOS DIGITAIS
+                E-COMMERCE · PRODUTOS DIGITAIS
               </p>
 
-              <h3>Musa CriaÃ§Ã£o Digital</h3>
+              <h3>Musa Criação Digital</h3>
 
               <p>
                 Loja digital desenvolvida para apresentar produtos digitais
-                com identidade visual prÃ³pria e uma experiÃªncia de compra
+                com identidade visual própria e uma experiência de compra
                 organizada.
               </p>
 
-              <span className="portfolio-status">Projeto em evoluÃ§Ã£o</span>
+              <span className="portfolio-status">Projeto em evolução</span>
             </div>
           </article>
         </div>
@@ -230,23 +230,23 @@ export default function Home() {
 
       <section className="services section" id="servicos">
         <div className="section-heading">
-          <p className="eyebrow">O QUE EU FAÃ‡O</p>
+          <p className="eyebrow">O QUE EU FAÇO</p>
 
           <h2>
             Tecnologia que trabalha
             <br />
-            a favor do <span>seu negÃ³cio.</span>
+            a favor do <span>seu negócio.</span>
           </h2>
 
           <p className="section-description">
-            SoluÃ§Ãµes digitais pensadas para apresentar sua marca, conquistar
+            Soluções digitais pensadas para apresentar sua marca, conquistar
             clientes e facilitar o dia a dia.
           </p>
         </div>
 
         <div className="service-grid">
           <article className="service-card">
-            <span className="service-number">01 / PRESENÃ‡A DIGITAL</span>
+            <span className="service-number">01 / PRESENÇA DIGITAL</span>
 
             <span className="service-icon" aria-hidden="true">
               <ArrowIcon />
@@ -256,7 +256,7 @@ export default function Home() {
 
             <p>
               Apresente sua empresa com profissionalismo, clareza e uma
-              experiÃªncia que funciona em celulares e computadores.
+              experiência que funciona em celulares e computadores.
             </p>
 
             <a href="#contato">
@@ -265,35 +265,35 @@ export default function Home() {
           </article>
 
           <article className="service-card">
-            <span className="service-number">02 / CONVERSÃƒO</span>
+            <span className="service-number">02 / CONVERSÃO</span>
 
             <span className="service-icon" aria-hidden="true">
-              â—Ž
+              ◎
             </span>
 
             <h3>Landing pages</h3>
 
             <p>
-              PÃ¡ginas focadas em um objetivo, com mensagem clara e caminhos
+              Páginas focadas em um objetivo, com mensagem clara e caminhos
               simples para o visitante entrar em contato.
             </p>
 
             <a href="#contato">
-              Criar minha pÃ¡gina <ArrowIcon />
+              Criar minha página <ArrowIcon />
             </a>
           </article>
 
           <article className="service-card">
-            <span className="service-number">03 / SOLUÃ‡Ã•ES DIGITAIS</span>
+            <span className="service-number">03 / SOLUÇÕES DIGITAIS</span>
 
             <span className="service-icon" aria-hidden="true">
-              âŒ˜
+              ⌘
             </span>
 
             <h3>Projetos personalizados</h3>
 
             <p>
-              CatÃ¡logos digitais e funcionalidades planejadas conforme as
+              Catálogos digitais e funcionalidades planejadas conforme as
               necessidades e os objetivos de cada projeto.
             </p>
 
@@ -316,7 +316,7 @@ export default function Home() {
               <i /> interface.tsx
             </span>
             <span className="about-code-line">
-              <i /> soluÃ§Ãµes digitais
+              <i /> soluções digitais
             </span>
             <div className="about-code-divider" />
             <span className="about-code-symbol">&lt;/&gt;</span>
@@ -327,23 +327,23 @@ export default function Home() {
         </div>
 
         <div className="about-content">
-          <p className="eyebrow">QUEM ESTÃ POR TRÃS DA SANTZZDEV</p>
+          <p className="eyebrow">QUEM ESTÁ POR TRÁS DA SANTZZDEV</p>
 
           <h2>
-            Desenvolvimento prÃ³ximo.
+            Desenvolvimento próximo.
             <br />
-            <span>SoluÃ§Ãµes personalizadas.</span>
+            <span>Soluções personalizadas.</span>
           </h2>
 
           <p>
             Sou desenvolvedor independente e criei a SantzzDev para transformar
             ideias em projetos digitais funcionais. Trabalho diretamente com
-            cada cliente para entender suas necessidades e construir soluÃ§Ãµes
+            cada cliente para entender suas necessidades e construir soluções
             alinhadas aos seus objetivos.
           </p>
 
           <p>
-            Meu foco Ã© unir tecnologia, organizaÃ§Ã£o e uma experiÃªncia simples
+            Meu foco é unir tecnologia, organização e uma experiência simples
             para quem vai usar o projeto.
           </p>
 
@@ -401,7 +401,7 @@ export default function Home() {
 
           <p className="section-description">
             Um processo transparente, com alinhamento antes do desenvolvimento
-            e atenÃ§Ã£o a cada etapa.
+            e atenção a cada etapa.
           </p>
         </div>
 
@@ -411,7 +411,7 @@ export default function Home() {
             <div>
               <h3>Entendimento</h3>
               <p>
-                ConheÃ§o sua ideia, seu pÃºblico e o que vocÃª precisa resolver.
+                Conheço sua ideia, seu público e o que você precisa resolver.
               </p>
             </div>
           </article>
@@ -422,7 +422,7 @@ export default function Home() {
               <h3>Planejamento</h3>
               <p>
                 Defino o escopo, a estrutura, o prazo e o investimento antes
-                de comeÃ§ar.
+                de começar.
               </p>
             </div>
           </article>
@@ -431,7 +431,7 @@ export default function Home() {
             <span>03</span>
             <div>
               <h3>Desenvolvimento</h3>
-              <p>Desenvolvo a soluÃ§Ã£o e valido os detalhes com vocÃª.</p>
+              <p>Desenvolvo a solução e valido os detalhes com você.</p>
             </div>
           </article>
 
@@ -440,8 +440,8 @@ export default function Home() {
             <div>
               <h3>Entrega</h3>
               <p>
-                Revisamos o projeto e alinhamos os prÃ³ximos passos para
-                publicaÃ§Ã£o.
+                Revisamos o projeto e alinhamos os próximos passos para
+                publicação.
               </p>
             </div>
           </article>
@@ -450,15 +450,15 @@ export default function Home() {
 
       <section className="contact section" id="contato">
         <div className="contact-panel">
-          <p className="eyebrow">SEU PRÃ“XIMO PASSO COMEÃ‡A AQUI</p>
+          <p className="eyebrow">SEU PRÓXIMO PASSO COMEÇA AQUI</p>
 
           <h2>
             Vamos conversar sobre seu <span>projeto?</span>
           </h2>
 
           <p>
-            Conte o que vocÃª precisa. Vou entender seus objetivos e conversar
-            com vocÃª sobre a melhor soluÃ§Ã£o, o escopo e o orÃ§amento.
+            Conte o que você precisa. Vou entender seus objetivos e conversar
+            com você sobre a melhor solução, o escopo e o orçamento.
           </p>
 
           <a
@@ -467,7 +467,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Solicitar orÃ§amento pelo WhatsApp <ArrowIcon />
+            Solicitar orçamento pelo WhatsApp <ArrowIcon />
           </a>
 
           <small>
@@ -480,7 +480,7 @@ export default function Home() {
         <a
           className="brand"
           href="#"
-          aria-label="SantzzDev, voltar ao inÃ­cio"
+          aria-label="SantzzDev, voltar ao início"
         >
           Santzz<span>Dev</span>
           <span className="brand-dot">.</span>
@@ -489,7 +489,7 @@ export default function Home() {
         <p>Ideias que ganham forma.</p>
 
         <span>
-          Â© {new Date().getFullYear()} SantzzDev. Todos os direitos reservados.
+          © {new Date().getFullYear()} SantzzDev. Todos os direitos reservados.
         </span>
       </footer>
     </main>
