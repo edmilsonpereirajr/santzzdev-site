@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import ArrowIcon from "@/components/ArrowIcon";
 
 const links = [
   { href: "#portfolio", label: "Portfólio", number: "01" },
@@ -101,12 +102,9 @@ export default function MobileNavigation() {
                   <span className="mobile-menu-label">
                     {link.label}
                   </span>
-                  <span
-                    className="mobile-menu-arrow"
-                    aria-hidden="true"
-                  >
-                    ↗
-                  </span>
+                <span className="mobile-menu-arrow">
+                 <ArrowIcon />
+                    </span>
                 </a>
               ))}
             </div>

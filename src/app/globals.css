@@ -1340,37 +1340,45 @@ button {
   }
 }
 
-/* Seção Sobre: gráfico autoral */
+
+/* Seção Sobre: visual refinado */
 .about {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   align-items: center;
-  gap: clamp(36px, 7vw, 100px);
+  gap: clamp(36px, 7vw, 88px);
   padding-top: 110px;
   padding-bottom: 110px;
 }
 
 .about-visual {
   position: relative;
+  isolation: isolate;
   display: grid;
-  min-height: 360px;
+  min-height: 390px;
   place-items: center;
   overflow: hidden;
-  border: 1px solid rgba(88, 166, 255, 0.18);
-  border-radius: 12px;
+  border: 1px solid rgba(88, 166, 255, 0.22);
+  border-radius: 16px;
   background:
-    radial-gradient(circle at 50% 50%, rgba(88, 166, 255, 0.12), transparent 55%),
-    #141414;
+    radial-gradient(
+      ellipse at 50% 45%,
+      rgba(88, 166, 255, 0.14),
+      transparent 58%
+    ),
+    linear-gradient(145deg, #181818 0%, #111111 100%);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.2);
 }
 
 .about-visual-grid {
   position: absolute;
+  z-index: -1;
   inset: 0;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  background-size: 28px 28px;
-  mask-image: radial-gradient(ellipse at center, black 20%, transparent 80%);
+  background-size: 30px 30px;
+  mask-image: radial-gradient(ellipse at center, black 15%, transparent 82%);
 }
 
 .about-orbit {
@@ -1379,28 +1387,33 @@ button {
   height: 250px;
   border: 1px solid rgba(88, 166, 255, 0.2);
   border-radius: 50%;
+  pointer-events: none;
 }
 
 .about-orbit-one {
-  transform: scaleX(1.35) rotate(-28deg);
+  transform: scaleX(1.4) rotate(-28deg);
 }
 
 .about-orbit-two {
-  transform: scaleX(1.35) rotate(48deg);
+  transform: scaleX(1.4) rotate(48deg);
+  border-color: rgba(88, 166, 255, 0.12);
 }
 
 .about-code-card {
   position: relative;
   z-index: 1;
   display: flex;
-  width: min(82%, 300px);
+  width: min(82%, 310px);
   flex-direction: column;
-  gap: 17px;
-  padding: 24px;
+  gap: 18px;
+  padding: 26px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-  background: rgba(24, 24, 24, 0.94);
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  background: rgba(20, 20, 20, 0.96);
+  box-shadow:
+    0 28px 65px rgba(0, 0, 0, 0.38),
+    0 0 35px rgba(88, 166, 255, 0.05);
+  backdrop-filter: blur(10px);
 }
 
 .about-code-label,
@@ -1412,11 +1425,12 @@ button {
 
 .about-code-label {
   color: var(--accent);
-  letter-spacing: 1.4px;
+  letter-spacing: 1.5px;
 }
 
 .about-code-line {
   color: #c6c6ce;
+  line-height: 1.5;
 }
 
 .about-code-line i {
@@ -1439,11 +1453,12 @@ button {
   font-size: 48px;
   font-weight: 700;
   letter-spacing: -5px;
+  line-height: 1.2;
 }
 
 .about-code-status {
   color: #a8a8b2;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .about-code-status i {
@@ -1455,16 +1470,67 @@ button {
   background: #70d6a3;
 }
 
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 32px;
+  }
+
+  .about-visual {
+    min-height: 350px;
+  }
+
+  .about-code-card {
+    width: min(88%, 310px);
+    padding: 22px;
+  }
+}
+
 @media (max-width: 760px) {
   .about {
     grid-template-columns: 1fr;
-    gap: 34px;
+    gap: 32px;
     padding-top: 75px;
     padding-bottom: 75px;
   }
 
   .about-visual {
-    min-height: 300px;
+    min-height: 320px;
+  }
+
+  .about-content {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-visual {
+    min-height: 280px;
+    border-radius: 12px;
+  }
+
+  .about-orbit {
+    width: 210px;
+    height: 210px;
+  }
+
+  .about-code-card {
+    width: min(86%, 310px);
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .about-code-symbol {
+    font-size: 42px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-visual,
+  .about-code-card {
+    scroll-behavior: auto;
+    animation: none;
+    transition: none;
   }
 }
 
