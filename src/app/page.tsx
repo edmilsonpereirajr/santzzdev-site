@@ -1,6 +1,8 @@
 ﻿import Image from "next/image";
 import ArrowIcon from "@/components/ArrowIcon";
 import MobileNavigation from "./MobileNavigation";
+import ScrollReveal from "@/components/ScrollReveal";
+
 import {
   siHtml5,
   siCss,
@@ -124,6 +126,7 @@ export default function Home() {
         </div>
       </section>
 
+      <ScrollReveal>
       <section className="portfolio section" id="portfolio">
         <div className="section-heading">
           <p className="eyebrow">PROJETOS AUTORAIS</p>
@@ -227,7 +230,8 @@ export default function Home() {
           </article>
         </div>
       </section>
-
+  </ScrollReveal>
+  <ScrollReveal>
       <section className="services section" id="servicos">
         <div className="section-heading">
           <p className="eyebrow">O QUE EU FAÇO</p>
@@ -303,7 +307,9 @@ export default function Home() {
           </article>
         </div>
       </section>
+  </ScrollReveal>
 
+     <ScrollReveal>
       <section className="about section" id="sobre">
         <div className="about-visual" aria-hidden="true">
           <div className="about-visual-grid" />
@@ -352,7 +358,9 @@ export default function Home() {
           </a>
         </div>
       </section>
+  </ScrollReveal>
 
+  <ScrollReveal>
       <section className="technologies section" id="tecnologias">
         <div className="section-heading">
           <p className="eyebrow">FERRAMENTAS E TECNOLOGIAS</p>
@@ -389,6 +397,9 @@ export default function Home() {
         </div>
       </section>
 
+  </ScrollReveal> 
+
+    <ScrollReveal>
       <section className="process section" id="processo">
         <div className="process-intro">
           <p className="eyebrow">COMO EU TRABALHO</p>
@@ -447,7 +458,8 @@ export default function Home() {
           </article>
         </div>
       </section>
-
+  </ScrollReveal>
+  <ScrollReveal>
       <section className="contact section" id="contato">
         <div className="contact-panel">
           <p className="eyebrow">SEU PRÓXIMO PASSO COMEÇA AQUI</p>
@@ -475,7 +487,7 @@ export default function Home() {
           </small>
         </div>
       </section>
-
+  </ScrollReveal>
       <footer className="site-footer">
         <a
           className="brand"
