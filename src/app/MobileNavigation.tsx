@@ -1,7 +1,6 @@
-
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const links = [
   { href: "#portfolio", label: "Portfólio", number: "01" },
@@ -14,9 +13,32 @@ const links = [
 export default function MobileNavigation() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const toggleRef = useRef<HTMLButtonElement>(null);
+  const firstLinkRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    firstLinkRef.current?.focus();
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+        toggleRef.current?.focus();
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen]);
+
   return (
     <div className="mobile-navigation">
       <button
+        ref={toggleRef}
         className={`mobile-menu-toggle${isOpen ? " is-open" : ""}`}
         type="button"
         aria-expanded={isOpen}
@@ -45,7 +67,9 @@ export default function MobileNavigation() {
           >
             <div className="mobile-menu-heading">
               <div>
-                <span className="mobile-menu-eyebrow">SANTZZDEV / MENU</span>
+                <span className="mobile-menu-eyebrow">
+                  SANTZZDEV / MENU
+                </span>
                 <p>Explore o site</p>
               </div>
 
@@ -64,11 +88,23 @@ export default function MobileNavigation() {
                 <a
                   key={link.href}
                   href={link.href}
+                  ref={
+                    link.href === "#portfolio"
+                      ? firstLinkRef
+                      : undefined
+                  }
                   onClick={() => setIsOpen(false)}
                 >
-                  <span className="mobile-menu-number">{link.number}</span>
-                  <span className="mobile-menu-label">{link.label}</span>
-                  <span className="mobile-menu-arrow" aria-hidden="true">
+                  <span className="mobile-menu-number">
+                    {link.number}
+                  </span>
+                  <span className="mobile-menu-label">
+                    {link.label}
+                  </span>
+                  <span
+                    className="mobile-menu-arrow"
+                    aria-hidden="true"
+                  >
                     ↗
                   </span>
                 </a>
