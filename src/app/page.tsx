@@ -257,7 +257,7 @@ export default function Home() {
 
             <article className="certification-card">
               <div className="certification-card-top">
-                <span className="certification-icon" aria-hidden="true">{"↗"}</span>
+                <span className="certification-icon" aria-hidden="true">↗</span>
                 <span className="certification-label">PROGRAMAÇÃO</span>
               </div>
               <h3>Python</h3>
@@ -272,7 +272,9 @@ export default function Home() {
 
             <article className="certification-card">
               <div className="certification-card-top">
-                <span className="certification-icon" aria-hidden="true">{"↗"}</span>
+                <span className="certification-icon" aria-hidden="true">
+                  <ArrowIcon />
+                    </span>
                 <span className="certification-label">ANÁLISE DE DADOS</span>
               </div>
               <h3>Análise de Dados e Inteligência de Negócios</h3>
