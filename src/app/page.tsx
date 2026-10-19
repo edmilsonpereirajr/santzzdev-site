@@ -176,9 +176,8 @@ export default function Home() {
                 <h3>SquadScope</h3>
 
                 <p>
-                  Plataforma voltada à análise de desempenho de equipes de Free
-                  Fire, com estatísticas e recursos para acompanhamento
-                  competitivo.
+                  Plataforma de análise de desempenho para equipes de Free Fire, com estatísticas e ferramentas 
+                  voltadas ao acompanhamento dos resultados e à evolução competitiva.
                 </p>
 
                 <span className="portfolio-status">Em desenvolvimento</span>
@@ -220,9 +219,8 @@ export default function Home() {
                 <h3>Musa Criação Digital</h3>
 
                 <p>
-                  Loja digital desenvolvida para apresentar produtos digitais
-                  com identidade visual própria e uma experiência de compra
-                  organizada.
+                  Loja digital com identidade visual própria, criada para apresentar produtos digitais e oferecer uma 
+                  experiência de navegação organizada, com foco na apresentação dos produtos e na jornada de compra.
                 </p>
 
                 <span className="portfolio-status">Projeto em evolução</span>
@@ -380,29 +378,43 @@ export default function Home() {
           </div>
 
           <div className="about-content">
-            <p className="eyebrow">QUEM ESTÁ POR TRÁS DA SANTZZDEV</p>
+  <p className="eyebrow">QUEM ESTÁ POR TRÁS DA SANTZZDEV</p>
 
-            <h2>
-              Quem conversa com você
-              <br />
-              <span>é quem desenvolve.</span>
-            </h2>
+  <h2>
+    Quem conversa com você
+    <br />
+    <span>é quem desenvolve.</span>
+  </h2>
 
-            <p>
-              Sou Edmilson, desenvolvedor independente e criador da SantzzDev.
-              Desenvolvo sites e soluções digitais pensando no que cada projeto
-              realmente precisa, da primeira ideia até a entrega.
-            </p>
+  <p className="about-description">
+    Meu nome é Edmilson. Sou desenvolvedor independente e criador da
+    SantzzDev.
+  </p>
 
-            <p>
-              Você fala diretamente comigo, acompanha o processo e participa
-              das decisões. Sem intermediários e sem soluções genéricas.
-            </p>
+  <p className="about-description">
+    Desenvolvo sites e soluções digitais pensando em três coisas:
+    design, desempenho e segurança. Meu objetivo é transformar ideias
+    em projetos bem construídos, com atenção aos detalhes e às
+    necessidades reais de cada negócio.
+  </p>
 
-            <a className="button-secondary" href="#contato">
-              Vamos conversar <ArrowIcon />
-            </a>
-          </div>
+  <p className="about-description">
+    Aqui, você fala diretamente com quem planeja e desenvolve seu
+    projeto. Sem intermediários e sem soluções genéricas.
+  </p>
+
+  <div className="about-highlight">
+    <span className="about-highlight-line" />
+    <p>
+      Contato direto. Desenvolvimento cuidadoso.
+      <span> Soluções feitas para cada projeto.</span>
+    </p>
+  </div>
+
+  <a className="button-secondary" href="#contato">
+    Vamos conversar <ArrowIcon />
+  </a>
+</div>
         </section>
       </ScrollReveal>
 
@@ -467,7 +479,7 @@ export default function Home() {
               <div>
                 <h3>Entendimento</h3>
                 <p>
-                  Conheço sua ideia, seu público e o que você precisa resolver.
+                  Conversamos sobre sua ideia, seu público e os objetivos que o projeto precisa alcançar.
                 </p>
               </div>
             </article>
@@ -477,8 +489,7 @@ export default function Home() {
               <div>
                 <h3>Planejamento</h3>
                 <p>
-                  Defino o escopo, a estrutura, o prazo e o investimento antes
-                  de começar.
+                  Definimos as funcionalidades, a estrutura, o prazo e o orçamento antes de iniciar o desenvolvimento.
                 </p>
               </div>
             </article>
@@ -487,7 +498,7 @@ export default function Home() {
               <span>03</span>
               <div>
                 <h3>Desenvolvimento</h3>
-                <p>Desenvolvo a solução e valido os detalhes com você.</p>
+                <p>Construo a solução conforme o planejamento e compartilho os avanços para validar os detalhes com você.</p>
               </div>
             </article>
 
@@ -496,8 +507,7 @@ export default function Home() {
               <div>
                 <h3>Entrega</h3>
                 <p>
-                  Revisamos o projeto e alinhamos os próximos passos para
-                  publicação.
+                  Revisamos o resultado, verificamos os pontos combinados e alinhamos a publicação do projeto.
                 </p>
               </div>
             </article>
@@ -515,8 +525,9 @@ export default function Home() {
             </h2>
 
             <p>
-              Conte o que você precisa. Vou entender seus objetivos e conversar
-              com você sobre a melhor solução, o escopo e o orçamento.
+                Me conte sobre sua ideia, o que seu negócio precisa e quais são
+                seus objetivos. Vamos conversar sobre a solução mais adequada,
+                as etapas do projeto e o orçamento.
             </p>
 
             <a
@@ -529,7 +540,7 @@ export default function Home() {
             </a>
 
             <small>
-              Atendimento direto pelo WhatsApp para conversar sobre seu projeto.
+              Converse diretamente comigo pelo WhatsApp, sem intermediários.
             </small>
           </div>
         </section>
@@ -546,7 +557,12 @@ export default function Home() {
         </a>
 
         <p>Ideias que ganham forma.</p>
-
+            <nav aria-label="Navegação do rodapé">
+             <a href="#portfolio">Portfólio</a>
+              <a href="#servicos">Serviços</a>
+           <a href="#sobre">Sobre mim</a>
+          <a href="#contato">Contato</a>
+      </nav>
         <span>
           © {new Date().getFullYear()} SantzzDev. Todos os direitos reservados.
         </span>
