@@ -231,6 +231,94 @@ export default function Home() {
       </ScrollReveal>
 
       <ScrollReveal>
+        <section className="certifications section" id="certificacoes">
+          <div className="section-heading">
+            <p className="eyebrow">FORMAÇÃO CONTÍNUA</p>
+            <h2>
+              Formação e <span>certificações.</span>
+            </h2>
+            <p className="section-description">
+              Aprendizado contínuo em tecnologia e desenvolvimento.
+            </p>
+          </div>
+
+          <div className="certifications-grid">
+            <article className="certification-card">
+              <div className="certification-card-top">
+                <span className="certification-icon" aria-hidden="true">{"</>"}</span>
+                <span className="certification-label">DESENVOLVIMENTO WEB</span>
+              </div>
+              <h3>Introduction to Front-End Development</h3>
+              <p className="certification-institution">Meta</p>
+              <div className="certification-card-footer">
+                <span>Curso concluído</span>
+              </div>
+            </article>
+
+            <article className="certification-card">
+              <div className="certification-card-top">
+                <span className="certification-icon" aria-hidden="true">{"↗"}</span>
+                <span className="certification-label">PROGRAMAÇÃO</span>
+              </div>
+              <h3>Python</h3>
+              <p className="certification-institution">Santander Open Academy</p>
+              <div className="certification-card-footer">
+                <span>8 horas</span>
+                <a href="/certificados/822_ctt.edmilsonpereirajr@gmail.com.pdf" target="_blank" rel="noopener noreferrer">
+                  Ver certificado <ArrowIcon />
+                </a>
+              </div>
+            </article>
+
+            <article className="certification-card">
+              <div className="certification-card-top">
+                <span className="certification-icon" aria-hidden="true">{"↗"}</span>
+                <span className="certification-label">ANÁLISE DE DADOS</span>
+              </div>
+              <h3>Análise de Dados e Inteligência de Negócios</h3>
+              <p className="certification-institution">Gran Faculdade</p>
+              <div className="certification-card-footer">
+                <span>30 horas</span>
+                <a href="/certificados/certificado-curso-livre_10511777065615.pdf" target="_blank" rel="noopener noreferrer">
+                  Ver certificado <ArrowIcon />
+                </a>
+              </div>
+            </article>
+
+            <article className="certification-card">
+              <div className="certification-card-top">
+                <span className="certification-icon" aria-hidden="true">{"◇"}</span>
+                <span className="certification-label">CIBERSEGURANÇA</span>
+              </div>
+              <h3>Fundamentos de Segurança Cibernética</h3>
+              <p className="certification-institution">IBM</p>
+              <div className="certification-card-footer">
+                <span>Certificação</span>
+                <a href="/certificados/4114_ctt.edmilsonpereirajr@gmail.com.pdf" target="_blank" rel="noopener noreferrer">
+                  Ver certificado <ArrowIcon />
+                </a>
+              </div>
+            </article>
+
+            <article className="certification-card">
+              <div className="certification-card-top">
+                <span className="certification-icon" aria-hidden="true">{"⌘"}</span>
+                <span className="certification-label">CIÊNCIA DA COMPUTAÇÃO</span>
+              </div>
+              <h3>Ciência da Computação de Harvard no Brasil</h3>
+              <p className="certification-institution">Certificado de formação</p>
+              <div className="certification-card-footer">
+                <span>Formação</span>
+                <a href="/certificados/Certificado_Edmilson%20Pereira%20dos%20Santos%20Junior.pdf" target="_blank" rel="noopener noreferrer">
+                  Ver certificado <ArrowIcon />
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </ScrollReveal>
+
+      <ScrollReveal>
         <section className="services section" id="servicos">
           <div className="section-heading">
             <p className="eyebrow">O QUE EU FAÇO</p>
@@ -258,9 +346,8 @@ export default function Home() {
               <h3>Sites institucionais</h3>
 
               <p>
-                Apresente sua empresa, seus serviços e seus contatos em um site
-                profissional, adaptado para celulares e computadores, com informações
-                organizadas para facilitar o contato com seus clientes.
+                Apresente sua empresa com profissionalismo, clareza e uma
+                experiência que funciona em celulares e computadores.
               </p>
 
               <a href="#contato">
@@ -278,9 +365,8 @@ export default function Home() {
               <h3>Landing pages</h3>
 
               <p>
-                Tenha uma página focada em divulgar um produto, serviço ou oferta,
-                com conteúdo objetivo e chamadas para ação que facilitem o próximo
-                passo do visitante.
+                Páginas focadas em um objetivo, com mensagem clara e caminhos
+                simples para o visitante entrar em contato.
               </p>
 
               <a href="#contato">
@@ -298,9 +384,8 @@ export default function Home() {
               <h3>Projetos personalizados</h3>
 
               <p>
-                Desenvolva uma solução digital de acordo com as necessidades do seu
-                negócio, desde catálogos digitais até funcionalidades específicas
-                planejadas para cada projeto.
+                Catálogos digitais e funcionalidades planejadas conforme as
+                necessidades e os objetivos de cada projeto.
               </p>
 
               <a href="#contato">
