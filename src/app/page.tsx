@@ -258,8 +258,9 @@ export default function Home() {
               <h3>Sites institucionais</h3>
 
               <p>
-                Apresente sua empresa com profissionalismo, clareza e uma
-                experiência que funciona em celulares e computadores.
+                Apresente sua empresa, seus serviços e seus contatos em um site
+                profissional, adaptado para celulares e computadores, com informações
+                organizadas para facilitar o contato com seus clientes.
               </p>
 
               <a href="#contato">
@@ -277,8 +278,9 @@ export default function Home() {
               <h3>Landing pages</h3>
 
               <p>
-                Páginas focadas em um objetivo, com mensagem clara e caminhos
-                simples para o visitante entrar em contato.
+                Tenha uma página focada em divulgar um produto, serviço ou oferta,
+                com conteúdo objetivo e chamadas para ação que facilitem o próximo
+                passo do visitante.
               </p>
 
               <a href="#contato">
@@ -296,8 +298,9 @@ export default function Home() {
               <h3>Projetos personalizados</h3>
 
               <p>
-                Catálogos digitais e funcionalidades planejadas conforme as
-                necessidades e os objetivos de cada projeto.
+                Desenvolva uma solução digital de acordo com as necessidades do seu
+                negócio, desde catálogos digitais até funcionalidades específicas
+                planejadas para cada projeto.
               </p>
 
               <a href="#contato">
