@@ -18,11 +18,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://santzzdev-site.vercel.app"),
   title: {
-    default: "SantzzDev | Desenvolvedor Web e Criação de Sites",
+    default: "Criação de Sites e Landing Pages | SantzzDev",
     template: "%s | SantzzDev",
   },
   description:
-    "Desenvolvimento de sites profissionais, landing pages e lojas virtuais. Soluções digitais personalizadas para empresas e empreendedores, com atendimento direto.",
+    "Criação de sites profissionais, landing pages e lojas virtuais para empresas e empreendedores em todo o Brasil. Conheça os projetos da SantzzDev.",
   applicationName: "SantzzDev",
   robots: {
     index: true,
@@ -52,6 +52,36 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://santzzdev-site.vercel.app/#person",
+      name: "Edmilson",
+      url: "https://santzzdev-site.vercel.app/",
+      jobTitle: "Desenvolvedor Web",
+      worksFor: {
+        "@type": "Organization",
+        name: "SantzzDev",
+        url: "https://santzzdev-site.vercel.app/",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://santzzdev-site.vercel.app/#website",
+      url: "https://santzzdev-site.vercel.app/",
+      name: "SantzzDev",
+      description:
+        "Desenvolvimento de sites profissionais, landing pages e lojas virtuais para empresas e empreendedores.",
+      inLanguage: "pt-BR",
+      publisher: {
+        "@id": "https://santzzdev-site.vercel.app/#person",
+      },
+    },
+  ],
+};
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -68,6 +98,14 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${geist.variable} ${geistMono.variable}`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+          }}
+        />
+      </head>
       <body>
         {children}
         <Analytics />
