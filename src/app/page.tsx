@@ -1,5 +1,6 @@
 ﻿import Image from "next/image";
 import ArrowIcon from "@/components/ArrowIcon";
+import CertificationIcon from "@/components/CertificationIcon";
 import MobileNavigation from "./MobileNavigation";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -245,7 +246,9 @@ export default function Home() {
           <div className="certifications-grid">
             <article className="certification-card">
               <div className="certification-card-top">
-                <span className="certification-icon" aria-hidden="true">{"</>"}</span>
+                <span className="certification-icon">
+                 <CertificationIcon type="web" />
+              </span>
                 <span className="certification-label">DESENVOLVIMENTO WEB</span>
               </div>
               <h3>Introduction to Front-End Development</h3>
@@ -257,7 +260,9 @@ export default function Home() {
 
             <article className="certification-card">
               <div className="certification-card-top">
-                <span className="certification-icon" aria-hidden="true">↗</span>
+                <span className="certification-icon">
+                  <CertificationIcon type="programming" />
+                </span>
                 <span className="certification-label">PROGRAMAÇÃO</span>
               </div>
               <h3>Python</h3>
@@ -289,7 +294,9 @@ export default function Home() {
 
             <article className="certification-card">
               <div className="certification-card-top">
-                <span className="certification-icon" aria-hidden="true">{"◇"}</span>
+                <span className="certification-icon">
+                  <CertificationIcon type="security" />
+              </span>
                 <span className="certification-label">CIBERSEGURANÇA</span>
               </div>
               <h3>Fundamentos de Segurança Cibernética</h3>
@@ -304,7 +311,9 @@ export default function Home() {
 
             <article className="certification-card">
               <div className="certification-card-top">
-                <span className="certification-icon" aria-hidden="true">{"⌘"}</span>
+                <span className="certification-icon">
+                  <CertificationIcon type="computer-science" />
+                </span>
                 <span className="certification-label">CIÊNCIA DA COMPUTAÇÃO</span>
               </div>
               <h3>Ciência da Computação de Harvard no Brasil</h3>
