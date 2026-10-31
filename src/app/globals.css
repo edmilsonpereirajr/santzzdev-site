@@ -301,14 +301,16 @@ button {
   min-height: 440px;
   place-items: center;
   isolation: isolate;
-  filter: drop-shadow(0 15px 45px rgba(0, 0, 0, 0.18));
+  filter: drop-shadow(0 15px 45px rgba(0, 0, 0, 0.2));
 }
 
 .visual-grid {
   position: absolute;
   z-index: -2;
   inset: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
   background-size: 36px 36px;
   mask-image: radial-gradient(ellipse at center, black 15%, transparent 72%);
 }
@@ -319,12 +321,55 @@ button {
   aspect-ratio: 1;
   border: 1px solid rgba(213, 164, 91, 0.2);
   border-radius: 50%;
+  pointer-events: none;
 }
 
-.orbit-one { transform: rotate(-28deg) scaleY(0.58); }
-.orbit-two { transform: rotate(48deg) scaleY(0.58); border-color: rgba(255, 255, 255, 0.12); }
+.visual-orbit::before,
+.visual-orbit::after {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 1px solid rgba(213, 164, 91, 0.8);
+  border-radius: 50%;
+  background: #d5a45b;
+  box-shadow: 0 0 14px rgba(213, 164, 91, 0.65);
+  content: "";
+}
+
+.visual-orbit::before {
+  top: 12%;
+  left: 17%;
+}
+
+.visual-orbit::after {
+  right: 13%;
+  bottom: 18%;
+  width: 5px;
+  height: 5px;
+  background: #91a19b;
+  border-color: rgba(145, 161, 155, 0.8);
+  box-shadow: 0 0 12px rgba(145, 161, 155, 0.45);
+}
+
+.orbit-one {
+  transform: rotate(-28deg) scaleY(0.58);
+  animation:
+    orbit-rotate-one 14s linear infinite,
+    orbit-glow 7s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.orbit-two {
+  transform: rotate(48deg) scaleY(0.58);
+  border-color: rgba(255, 255, 255, 0.13);
+  animation:
+    orbit-rotate-two 18s linear infinite,
+    orbit-glow 9s ease-in-out infinite reverse;
+  will-change: transform, opacity;
+}
 
 .visual-core {
+  position: relative;
   display: flex;
   width: 178px;
   aspect-ratio: 1;
@@ -332,23 +377,61 @@ button {
   align-items: center;
   justify-content: center;
   gap: 13px;
-  border: 1px solid rgba(213, 164, 91, 0.5);
-  border-radius: 24px;
-  background: linear-gradient(145deg, #28373B, #131C20 75%);
-  box-shadow: 0 0 85px rgba(213, 164, 91, 0.14), inset 0 0 35px rgba(213, 164, 91, 0.07);
+  overflow: hidden;
+  border: 1px solid rgba(213, 164, 91, 0.55);
+  border-radius: 26px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(213, 164, 91, 0.17), transparent 65%),
+    linear-gradient(145deg, #34464a 0%, #192529 52%, #0d1417 100%);
+  box-shadow:
+    0 0 75px rgba(213, 164, 91, 0.13),
+    0 24px 55px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.16),
+    inset 0 -18px 35px rgba(0, 0, 0, 0.2);
   animation: float 6s ease-in-out infinite;
 }
 
+.visual-core::before {
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 19px;
+  content: "";
+  pointer-events: none;
+}
+
+.visual-core::after {
+  position: absolute;
+  top: -45%;
+  left: -30%;
+  width: 160%;
+  height: 70%;
+  transform: rotate(-28deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.07),
+    transparent
+  );
+  content: "";
+  pointer-events: none;
+}
+
 .core-symbol {
+  position: relative;
+  z-index: 1;
   color: var(--accent);
   font-family: var(--font-mono);
   font-size: 43px;
   font-weight: 600;
   letter-spacing: -4px;
+  text-shadow: 0 0 24px rgba(213, 164, 91, 0.3);
 }
 
 .core-label {
-  color: #b3c0d0;
+  position: relative;
+  z-index: 1;
+  color: #c0cbc5;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -356,48 +439,143 @@ button {
 
 .floating-card {
   position: absolute;
+  z-index: 2;
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 13px 15px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 6px;
-  background: rgba(24, 24, 24, 0.92);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
-  color: #d5d5dc;
+  border: 1px solid rgba(213, 164, 91, 0.16);
+  border-radius: 9px;
+  background: linear-gradient(
+    135deg,
+    rgba(40, 55, 59, 0.82),
+    rgba(15, 23, 26, 0.88)
+  );
+  box-shadow:
+    0 14px 35px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  color: #d5ddd8;
   font-size: 10px;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
-.card-top { top: 16%; right: 0; }
-.card-bottom { bottom: 14%; left: 0; }
+.card-top {
+  top: 16%;
+  right: 0;
+  animation: card-drift 7s ease-in-out infinite;
+}
+
+.card-bottom {
+  bottom: 14%;
+  left: 0;
+  animation: card-drift 8s ease-in-out infinite reverse;
+}
+
+.card-indicator {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 12px rgba(213, 164, 91, 0.65);
+}
 
 .code-mark {
   display: grid;
   width: 33px;
   height: 33px;
+  flex-shrink: 0;
   place-items: center;
-  border-radius: 4px;
-  background: rgba(213, 164, 91, 0.12);
+  border: 1px solid rgba(213, 164, 91, 0.14);
+  border-radius: 6px;
+  background: rgba(213, 164, 91, 0.1);
   color: var(--accent);
   font-family: var(--font-mono);
   font-size: 15px;
 }
 
 .card-bottom strong,
-.card-bottom small { display: block; }
-.card-bottom strong { margin-bottom: 4px; color: white; font-size: 10px; }
-.card-bottom small { color: #9696a0; font-size: 9px; }
+.card-bottom small {
+  display: block;
+}
+
+.card-bottom strong {
+  margin-bottom: 4px;
+  color: #f0f3ef;
+  font-size: 10px;
+}
+
+.card-bottom small {
+  color: #a0aea7;
+  font-size: 9px;
+}
 
 .visual-caption {
   position: absolute;
   right: 0;
   bottom: 3%;
-  color: #7b7b86;
+  color: #91a19b;
   font-size: 8px;
   letter-spacing: 2px;
 }
 
+@keyframes orbit-glow {
+  0%, 100% {
+    opacity: 0.65;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes card-drift {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes orbit-rotate-one {
+  from {
+    transform: rotate(-28deg) scaleY(0.58);
+  }
+  to {
+    transform: rotate(332deg) scaleY(0.58);
+  }
+}
+
+@keyframes orbit-rotate-two {
+  from {
+    transform: rotate(48deg) scaleY(0.58);
+  }
+  to {
+    transform: rotate(408deg) scaleY(0.58);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .visual-core,
+  .card-top,
+  .card-bottom {
+    animation: none;
+  }
+
+  .orbit-one,
+  .orbit-two {
+    animation-duration: 14s !important;
+    animation-iteration-count: infinite !important;
+  }
+}@media (prefers-reduced-motion: reduce) {
+  .visual-core,
+  .orbit-one,
+  .orbit-two,
+  .card-top,
+  .card-bottom {
+    animation: none;
+  }
+}
 .hero-index {
   position: absolute;
   right: 0;
