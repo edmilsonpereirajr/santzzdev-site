@@ -58,7 +58,7 @@ export default function Home() {
         <div className="hero-content">
           <p className="eyebrow">
             <span className="status-dot" />
-            DESENVOLVIMENTO INDEPENDENTE · SANTZZDEV
+            Desenvolvimento independente · SantzzDev
           </p>
 
           <h1>
@@ -68,8 +68,8 @@ export default function Home() {
           </h1>
 
           <p className="hero-description">
-            Conheça projetos que demonstram como transformo ideias em soluções
-            digitais, de plataformas personalizadas a lojas virtuais.
+            Conheça projetos que estou desenvolvendo, incluindo uma plataforma
+            de análise para esports e uma loja de produtos digitais.
           </p>
 
           <div className="hero-actions">
@@ -99,7 +99,7 @@ export default function Home() {
 
           <div className="visual-core">
             <span className="core-symbol">&lt;/&gt;</span>
-            <span className="core-label">IDEIA EM CONSTRUÇÃO</span>
+            <span className="core-label">Ideia em construção</span>
           </div>
 
           <div className="floating-card card-top">
@@ -116,21 +116,15 @@ export default function Home() {
           </div>
 
           <span className="visual-caption">
-            PLANEJAR · DESENVOLVER · ENTREGAR
+            Planejar · desenvolver · entregar
           </span>
         </div>
-
-        <div className="hero-index" aria-hidden="true">
-          <span>01</span>
-          <span className="index-line" />
-          <span>03</span>
-        </div>
-      </section>
+</section>
 
       <ScrollReveal>
         <section className="portfolio section" id="portfolio">
           <div className="section-heading">
-            <p className="eyebrow">PROJETOS AUTORAIS</p>
+            <p className="eyebrow">Projetos em desenvolvimento</p>
 
             <h2>
               Ideias reais.
@@ -158,7 +152,8 @@ export default function Home() {
                   alt="Captura real da plataforma SquadScope"
                   width={1200}
                   height={750}
-                  sizes="(max-width: 700px) 100vw, 50vw"
+                  sizes="(max-width: 600px) 100vw, 50vw"
+                  unoptimized
                   style={{
                     width: "100%",
                     height: "100%",
@@ -173,7 +168,7 @@ export default function Home() {
               </a>
 
               <div className="portfolio-info">
-                <p className="portfolio-category">ANÁLISE · ESPORTS</p>
+                <p className="portfolio-category">Análise para esports</p>
                 <h3>SquadScope</h3>
 
                 <p>
@@ -196,15 +191,16 @@ export default function Home() {
                 <Image
                   src="/images/musa-criacao-digital.png"
                   alt="Captura real da loja Musa Criação Digital"
-                  width={1200}
-                  height={750}
-                  sizes="(max-width: 700px) 100vw, 50vw"
+                  width={1366}
+                  height={728}
+                  sizes="(max-width: 600px) 100vw, 50vw"
+                  unoptimized
                   style={{
                     width: "100%",
                     height: "100%",
                     objectFit: "contain",
                   }}
-                  loading="eager"
+                  loading="lazy"
                 />
 
                 <span className="portfolio-open">
@@ -214,7 +210,7 @@ export default function Home() {
 
               <div className="portfolio-info">
                 <p className="portfolio-category">
-                  E-COMMERCE · PRODUTOS DIGITAIS
+                  Loja de produtos digitais
                 </p>
 
                 <h3>Musa Criação Digital</h3>
@@ -234,7 +230,7 @@ export default function Home() {
       <ScrollReveal>
         <section className="certifications section" id="certificacoes">
           <div className="section-heading">
-            <p className="eyebrow">FORMAÇÃO CONTÍNUA</p>
+            <p className="eyebrow">Formação contínua</p>
             <h2>
               Formação e <span>certificações.</span>
             </h2>
@@ -249,7 +245,7 @@ export default function Home() {
                 <span className="certification-icon">
                  <CertificationIcon type="web" />
               </span>
-                <span className="certification-label">DESENVOLVIMENTO WEB</span>
+                <span className="certification-label">Desenvolvimento web</span>
               </div>
               <h3>Introduction to Front-End Development</h3>
               <p className="certification-institution">Meta</p>
@@ -263,7 +259,7 @@ export default function Home() {
                 <span className="certification-icon">
                   <CertificationIcon type="programming" />
                 </span>
-                <span className="certification-label">PROGRAMAÇÃO</span>
+                <span className="certification-label">Programação</span>
               </div>
               <h3>Python</h3>
               <p className="certification-institution">Santander Open Academy</p>
@@ -277,10 +273,10 @@ export default function Home() {
 
             <article className="certification-card">
               <div className="certification-card-top">
-                <span className="certification-icon" aria-hidden="true">
-                  <ArrowIcon />
-                    </span>
-                <span className="certification-label">ANÁLISE DE DADOS</span>
+                <span className="certification-icon">
+                  <CertificationIcon type="data" />
+                </span>
+                <span className="certification-label">Análise de dados</span>
               </div>
               <h3>Análise de Dados e Inteligência de Negócios</h3>
               <p className="certification-institution">Gran Faculdade</p>
@@ -297,7 +293,7 @@ export default function Home() {
                 <span className="certification-icon">
                   <CertificationIcon type="security" />
               </span>
-                <span className="certification-label">CIBERSEGURANÇA</span>
+                <span className="certification-label">Cibersegurança</span>
               </div>
               <h3>Fundamentos de Segurança Cibernética</h3>
               <p className="certification-institution">IBM</p>
@@ -314,7 +310,7 @@ export default function Home() {
                 <span className="certification-icon">
                   <CertificationIcon type="computer-science" />
                 </span>
-                <span className="certification-label">CIÊNCIA DA COMPUTAÇÃO</span>
+                <span className="certification-label">Ciência da computação</span>
               </div>
               <h3>Ciência da Computação de Harvard no Brasil</h3>
               <p className="certification-institution">Certificado de formação</p>
@@ -332,7 +328,7 @@ export default function Home() {
       <ScrollReveal>
         <section className="services section" id="servicos">
           <div className="section-heading">
-            <p className="eyebrow">O QUE EU FAÇO</p>
+            <p className="eyebrow">Serviços</p>
 
             <h2>
               Tecnologia que trabalha
@@ -341,14 +337,14 @@ export default function Home() {
             </h2>
 
             <p className="section-description">
-              Soluções digitais pensadas para apresentar sua marca, conquistar
-              clientes e facilitar o dia a dia.
+              Desenvolvo páginas e soluções digitais para apresentar sua marca,
+              explicar sua oferta e facilitar o contato com seus clientes.
             </p>
           </div>
 
           <div className="service-grid">
             <article className="service-card">
-              <span className="service-number">01 / PRESENÇA DIGITAL</span>
+              <span className="service-number">Presença digital</span>
 
               <span className="service-icon" aria-hidden="true">
                 <ArrowIcon />
@@ -367,7 +363,7 @@ export default function Home() {
             </article>
 
             <article className="service-card">
-              <span className="service-number">02 / CONVERSÃO</span>
+              <span className="service-number">Páginas de conversão</span>
 
               <span className="service-icon" aria-hidden="true">
                 ◎
@@ -386,7 +382,7 @@ export default function Home() {
             </article>
 
             <article className="service-card">
-              <span className="service-number">03 / SOLUÇÕES DIGITAIS</span>
+              <span className="service-number">Soluções digitais</span>
 
               <span className="service-icon" aria-hidden="true">
                 ⌘
@@ -422,10 +418,10 @@ export default function Home() {
                   <i />
                 </div>
 
-                <span>SANTZZDEV / DEV</span>
+                <span>SantzzDev / Dev</span>
 
                 <span className="about-terminal-status">
-                  <i /> ONLINE
+                  <i /> Em desenvolvimento
                 </span>
               </div>
 
@@ -477,7 +473,7 @@ export default function Home() {
           </div>
 
           <div className="about-content">
-  <p className="eyebrow">QUEM ESTÁ POR TRÁS DA SANTZZDEV</p>
+  <p className="eyebrow">Quem está por trás da SantzzDev</p>
 
   <h2>
     Quem conversa com você
@@ -486,27 +482,27 @@ export default function Home() {
   </h2>
 
   <p className="about-description">
-    Meu nome é Edmilson. Sou desenvolvedor independente e criador da
-    SantzzDev.
+    Meu nome é Edmilson. Sou desenvolvedor independente e criei a
+    SantzzDev para desenvolver projetos digitais.
   </p>
 
   <p className="about-description">
-    Desenvolvo sites e soluções digitais pensando em três coisas:
-    design, desempenho e segurança. Meu objetivo é transformar ideias
-    em projetos bem construídos, com atenção aos detalhes e às
-    necessidades reais de cada negócio.
+    Desenvolvo sites e soluções digitais com atenção à estrutura,
+    à experiência de navegação e às necessidades de cada projeto.
+    Também estudo e aplico tecnologias como Next.js, React,
+    TypeScript e Supabase nos meus projetos.
   </p>
 
   <p className="about-description">
-    Aqui, você fala diretamente com quem planeja e desenvolve seu
-    projeto. Sem intermediários e sem soluções genéricas.
+    Durante o projeto, você conversa diretamente comigo sobre o
+    planejamento, o desenvolvimento e os ajustes necessários.
   </p>
 
   <div className="about-highlight">
     <span className="about-highlight-line" />
     <p>
-      Contato direto. Desenvolvimento cuidadoso.
-      <span> Soluções feitas para cada projeto.</span>
+      Contato direto. Planejamento claro.
+      <span> Desenvolvimento alinhado ao seu projeto.</span>
     </p>
   </div>
 
@@ -520,7 +516,7 @@ export default function Home() {
       <ScrollReveal>
         <section className="technologies section" id="tecnologias">
           <div className="section-heading">
-            <p className="eyebrow">FERRAMENTAS E TECNOLOGIAS</p>
+            <p className="eyebrow">Ferramentas e tecnologias</p>
 
             <h2>
               Construindo com
@@ -558,7 +554,7 @@ export default function Home() {
       <ScrollReveal>
         <section className="process section" id="processo">
           <div className="process-intro">
-            <p className="eyebrow">COMO EU TRABALHO</p>
+            <p className="eyebrow">Como eu trabalho</p>
 
             <h2>
               Da primeira conversa
@@ -617,7 +613,7 @@ export default function Home() {
       <ScrollReveal>
         <section className="contact section" id="contato">
           <div className="contact-panel">
-            <p className="eyebrow">SEU PRÓXIMO PASSO COMEÇA AQUI</p>
+            <p className="eyebrow">Vamos conversar sobre seu projeto</p>
 
             <h2>
               Vamos conversar sobre seu <span>projeto?</span>

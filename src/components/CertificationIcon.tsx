@@ -1,4 +1,3 @@
-
 type CertificationIconProps = {
   type: "web" | "programming" | "data" | "security" | "computer-science";
 };

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import ArrowIcon from "@/components/ArrowIcon";
 
 const links = [
@@ -15,17 +15,49 @@ export default function MobileNavigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleRef = useRef<HTMLButtonElement>(null);
-  const firstLinkRef = useRef<HTMLAnchorElement>(null);
+  const menuRef = useRef<HTMLElement>(null);
+
+  const closeMenu = useCallback(() => {
+    setIsOpen(false);
+    toggleRef.current?.focus();
+  }, []);
 
   useEffect(() => {
     if (!isOpen) return;
 
-    firstLinkRef.current?.focus();
+    const menu = menuRef.current;
+    if (!menu) return;
+
+    const getFocusableElements = () =>
+      Array.from(
+        menu.querySelectorAll<HTMLElement>(
+          'a[href], button:not(:disabled), [tabindex]:not([tabindex="-1"])'
+        )
+      );
+
+    getFocusableElements()[0]?.focus();
 
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setIsOpen(false);
-        toggleRef.current?.focus();
+        event.preventDefault();
+        closeMenu();
+        return;
+      }
+
+      if (event.key !== "Tab") return;
+
+      const elements = getFocusableElements();
+      const first = elements[0];
+      const last = elements[elements.length - 1];
+
+      if (!first || !last) return;
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
       }
     }
 
@@ -34,7 +66,7 @@ export default function MobileNavigation() {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [isOpen]);
+  }, [isOpen, closeMenu]);
 
   return (
     <div className="mobile-navigation">
@@ -58,10 +90,11 @@ export default function MobileNavigation() {
             className="mobile-menu-backdrop"
             type="button"
             aria-label="Fechar menu"
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
           />
 
           <nav
+            ref={menuRef}
             id="mobile-menu"
             className="mobile-menu-panel"
             aria-label="Navegação para celular"
@@ -78,7 +111,7 @@ export default function MobileNavigation() {
                 className="mobile-menu-close"
                 type="button"
                 aria-label="Fechar menu"
-                onClick={() => setIsOpen(false)}
+                onClick={closeMenu}
               >
                 ×
               </button>
@@ -89,22 +122,19 @@ export default function MobileNavigation() {
                 <a
                   key={link.href}
                   href={link.href}
-                  ref={
-                    link.href === "#portfolio"
-                      ? firstLinkRef
-                      : undefined
-                  }
-                  onClick={() => setIsOpen(false)}
+                  onClick={closeMenu}
                 >
                   <span className="mobile-menu-number">
                     {link.number}
                   </span>
+
                   <span className="mobile-menu-label">
                     {link.label}
                   </span>
-                <span className="mobile-menu-arrow">
-                 <ArrowIcon />
-                    </span>
+
+                  <span className="mobile-menu-arrow">
+                    <ArrowIcon />
+                  </span>
                 </a>
               ))}
             </div>

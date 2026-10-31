@@ -26,8 +26,8 @@ export default function ScrollReveal({
     );
 
     if (reducedMotion.matches || !("IntersectionObserver" in window)) {
-      element.classList.add("is-visible");
-      return;
+    element.classList.add("is-visible");
+    return;
     }
 
     const observer = new IntersectionObserver(
@@ -37,7 +37,7 @@ export default function ScrollReveal({
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.12 }
+      { threshold: 0.05 }
     );
 
     observer.observe(element);
