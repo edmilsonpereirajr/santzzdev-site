@@ -1,4 +1,6 @@
 import { Analytics } from "@vercel/analytics/next";
+import CookieConsent from "@/components/CookieConsent";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
@@ -116,6 +118,8 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        <CookieConsent />
+        <GoogleAnalytics />
         <Analytics />
       </body>
     </html>

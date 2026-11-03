@@ -1,6 +1,7 @@
 ﻿import Image from "next/image";
 import ArrowIcon from "@/components/ArrowIcon";
 import CertificationIcon from "@/components/CertificationIcon";
+import CookieSettingsButton from "@/components/CookieSettingsButton";
 import MobileNavigation from "./MobileNavigation";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -98,8 +99,14 @@ export default function Home() {
           <div className="visual-orbit orbit-two" />
 
           <div className="visual-core">
-            <span className="core-symbol">&lt;/&gt;</span>
-            <span className="core-label">Ideia em construção</span>
+            <Image
+              src="/images/logo-santzzdev-transparente.svg"
+            alt="Logo SantzzDev"
+            width={150}
+            height={150}
+            className="core-logo"
+          />
+            <span className="core-label">Sob Medida</span>
           </div>
 
           <div className="floating-card card-top">
@@ -658,6 +665,7 @@ export default function Home() {
            <a href="#sobre">Sobre mim</a>
           <a href="#contato">Contato</a>
       </nav>
+            <CookieSettingsButton />
         <span>
           © {new Date().getFullYear()} SantzzDev. Todos os direitos reservados.
         </span>
