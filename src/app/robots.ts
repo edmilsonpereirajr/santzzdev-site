@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://santzzdev-site.vercel.app/sitemap.xml",
-    host: "https://santzzdev-site.vercel.app",
+    sitemap: "https://santzzdev.vercel.app/sitemap.xml",
+    host: "https://santzzdev.vercel.app",
   };
 }

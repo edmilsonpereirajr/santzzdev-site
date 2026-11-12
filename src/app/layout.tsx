@@ -25,8 +25,9 @@ const ibmPlexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://santzzdev-site.vercel.app"),
+  metadataBase: new URL("https://santzzdev.vercel.app"),
   title: {
     default: "Criação de Sites e Landing Pages | SantzzDev",
     template: "%s | SantzzDev",
@@ -34,6 +35,9 @@ export const metadata: Metadata = {
   description:
     "Criação de sites profissionais, landing pages e lojas virtuais para empresas e empreendedores em todo o Brasil. Conheça os projetos da SantzzDev.",
   applicationName: "SantzzDev",
+  alternates: {
+    canonical: "/",
+  },
   robots: {
     index: true,
     follow: true,
@@ -41,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://santzzdev-site.vercel.app/",
+    url: "https://santzzdev.vercel.app/",
     siteName: "SantzzDev",
     title: "SantzzDev | Desenvolvedor Web e Criação de Sites",
     description:
@@ -62,31 +66,32 @@ export const metadata: Metadata = {
   },
 };
 
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://santzzdev-site.vercel.app/#person",
+      "@id": "https://santzzdev.vercel.app/#person",
       name: "Edmilson",
-      url: "https://santzzdev-site.vercel.app/",
+      url: "https://santzzdev.vercel.app/",
       jobTitle: "Desenvolvedor Web",
       worksFor: {
         "@type": "Organization",
         name: "SantzzDev",
-        url: "https://santzzdev-site.vercel.app/",
+        url: "https://santzzdev.vercel.app/",
       },
     },
     {
       "@type": "WebSite",
-      "@id": "https://santzzdev-site.vercel.app/#website",
-      url: "https://santzzdev-site.vercel.app/",
+      "@id": "https://santzzdev.vercel.app/#website",
+      url: "https://santzzdev.vercel.app/",
       name: "SantzzDev",
       description:
         "Desenvolvimento de sites profissionais, landing pages e lojas virtuais para empresas e empreendedores.",
       inLanguage: "pt-BR",
       publisher: {
-        "@id": "https://santzzdev-site.vercel.app/#person",
+        "@id": "https://santzzdev.vercel.app/#person",
       },
     },
   ],
