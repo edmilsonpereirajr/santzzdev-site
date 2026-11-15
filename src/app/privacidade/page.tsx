@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ArrowIcon from "@/components/ArrowIcon";
 import CookieSettingsButton from "@/components/CookieSettingsButton";
+import { EMAIL } from "@/data/links";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade",
@@ -46,7 +47,8 @@ export default function PrivacyPolicy() {
           <p>
             O responsável pelo tratamento dos dados é Edmilson Pereira dos Santos Junior,
             desenvolvedor independente por trás da SantzzDev. Para qualquer
-            assunto sobre privacidade, fale comigo pelo{" "}
+            assunto sobre privacidade, fale comigo pelo e-mail{" "}
+            <a href={`mailto:${EMAIL}`}>{EMAIL}</a> ou pelo{" "}
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               WhatsApp
             </a>
@@ -146,7 +148,8 @@ export default function PrivacyPolicy() {
             o acesso a eles, a correção de dados incorretos, a anonimização ou
             exclusão de dados desnecessários, a portabilidade, informações sobre
             compartilhamento e a revogação do consentimento a qualquer momento.
-            Basta me chamar pelo{" "}
+            Basta me chamar pelo e-mail{" "}
+            <a href={`mailto:${EMAIL}`}>{EMAIL}</a> ou pelo{" "}
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               WhatsApp
             </a>

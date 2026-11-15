@@ -1,5 +1,12 @@
 import ArrowIcon from "@/components/ArrowIcon";
 import ScrollReveal from "@/components/ScrollReveal";
+import {
+  EMAIL,
+  GITHUB_HANDLE,
+  GITHUB_URL,
+  INSTAGRAM_HANDLE,
+  INSTAGRAM_URL,
+} from "@/data/links";
 
 export default function Contact() {
   return (
@@ -30,6 +37,25 @@ export default function Contact() {
           <small>
             Converse diretamente comigo pelo WhatsApp, sem intermediários.
           </small>
+
+          <ul className="contact-channels" aria-label="Outros canais">
+            <li>
+              <span>E-mail</span>
+              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+            </li>
+            <li>
+              <span>Instagram</span>
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+                {INSTAGRAM_HANDLE}
+              </a>
+            </li>
+            <li>
+              <span>GitHub</span>
+              <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
+                {GITHUB_HANDLE}
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </ScrollReveal>

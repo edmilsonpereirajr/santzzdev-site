@@ -3,6 +3,7 @@ import CookieConsent from "@/components/CookieConsent";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Space_Grotesk } from "next/font/google";
+import { EMAIL, GITHUB_URL, INSTAGRAM_URL, SITE_URL } from "@/data/links";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -79,10 +80,34 @@ const structuredData = {
       name: "Edmilson",
       url: "https://santzzdev.vercel.app/",
       jobTitle: "Desenvolvedor Web",
+      email: EMAIL,
+      sameAs: [INSTAGRAM_URL, GITHUB_URL],
       worksFor: {
         "@type": "Organization",
         name: "SantzzDev",
         url: "https://santzzdev.vercel.app/",
+      },
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": `${SITE_URL}/#service`,
+      name: "SantzzDev",
+      url: `${SITE_URL}/`,
+      description:
+        "Criação de sites institucionais, landing pages e projetos personalizados para empresas e empreendedores.",
+      areaServed: { "@type": "Country", name: "Brasil" },
+      serviceType: [
+        "Criação de sites institucionais",
+        "Criação de landing pages",
+        "Desenvolvimento de projetos web personalizados",
+      ],
+      founder: { "@id": `${SITE_URL}/#person` },
+      sameAs: [INSTAGRAM_URL, GITHUB_URL],
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        email: EMAIL,
+        availableLanguage: "Portuguese",
       },
     },
     {

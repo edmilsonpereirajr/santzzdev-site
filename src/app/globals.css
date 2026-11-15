@@ -2167,3 +2167,74 @@ button {
 @media (max-width: 560px) {
   .hero-proof { margin-top: 30px; font-size: 11px; }
 }
+
+/* CONTATO: outros canais */
+
+.contact-channels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 36px;
+  margin-top: 34px;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--border);
+  list-style: none;
+}
+
+.contact-channels li {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.contact-channels span {
+  color: #82828c;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.contact-channels a {
+  color: var(--foreground);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-decoration-color: rgba(7, 91, 255, 0.6);
+  text-underline-offset: 4px;
+  transition: color 180ms ease;
+}
+
+.contact-channels a:hover { color: var(--accent); }
+
+/* PÁGINA 404 */
+
+.not-found {
+  width: min(100% - 48px, 760px);
+  margin: 0 auto;
+  padding: 90px 0 140px;
+}
+
+.not-found h1 {
+  margin-top: 22px;
+  font-size: clamp(44px, 9vw, 84px);
+  font-weight: 700;
+  letter-spacing: -3.5px;
+  line-height: 1;
+}
+
+.not-found h1 span { color: var(--accent); }
+
+.not-found > p:not(.eyebrow) {
+  max-width: 460px;
+  margin-top: 26px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
