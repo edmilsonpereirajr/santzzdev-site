@@ -1,7 +1,6 @@
-
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import type { ReactNode } from "react";
 
 type ScrollRevealProps = {
@@ -9,12 +8,19 @@ type ScrollRevealProps = {
   className?: string;
 };
 
+/**
+ * Revela a seção com um fade ao rolar a página.
+ *
+ * O conteúdo é visível por padrão (HTML do servidor, sem JavaScript, leitores
+ * de tela e buscadores enxergam tudo). Só depois que o componente monta no
+ * navegador é que as seções ainda fora da tela recebem a classe
+ * `reveal-pending`, que as esconde até entrarem na viewport.
+ */
 export default function ScrollReveal({
   children,
   className = "",
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const element = ref.current;
@@ -26,15 +32,21 @@ export default function ScrollReveal({
     );
 
     if (reducedMotion.matches || !("IntersectionObserver" in window)) {
-    element.classList.add("is-visible");
-    return;
+      return;
     }
+
+    // Já está na tela (topo da página ou link com #âncora): não esconde.
+    if (element.getBoundingClientRect().top < window.innerHeight) {
+      return;
+    }
+
+    element.classList.add("reveal-pending");
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setVisible(true);
-          observer.unobserve(entry.target);
+          element.classList.remove("reveal-pending");
+          observer.disconnect();
         }
       },
       { threshold: 0.05 }
@@ -42,14 +54,14 @@ export default function ScrollReveal({
 
     observer.observe(element);
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      element.classList.remove("reveal-pending");
+    };
   }, []);
 
   return (
-    <div
-      ref={ref}
-      className={`${className} scroll-reveal${visible ? " is-visible" : ""}`}
-    >
+    <div ref={ref} className={`${className} scroll-reveal`.trim()}>
       {children}
     </div>
   );

@@ -62,10 +62,12 @@ export default function GoogleAnalytics() {
     window[`ga-disable-${GA_ID}`] = false;
     window.dataLayer = window.dataLayer || [];
 
+    // O gtag.js exige o objeto `arguments` (e não um array) no dataLayer.
     window.gtag =
       window.gtag ||
-      function (...args: unknown[]) {
-        window.dataLayer.push(args);
+      function () {
+        // eslint-disable-next-line prefer-rest-params
+        window.dataLayer.push(arguments);
       };
 
     window.gtag("consent", "default", {
@@ -86,7 +88,6 @@ export default function GoogleAnalytics() {
 
     window.gtag("config", GA_ID, {
       send_page_view: true,
-      debug_mode: true,
     });
 
     if (window.gaScriptLoaded || window.gaScriptLoading) {
@@ -105,7 +106,6 @@ export default function GoogleAnalytics() {
         () => {
           window.gaScriptLoaded = true;
           window.gaScriptLoading = false;
-          console.info("[GA4] Script carregado.");
         },
         { once: true }
       );
@@ -114,7 +114,6 @@ export default function GoogleAnalytics() {
         "error",
         () => {
           window.gaScriptLoading = false;
-          console.error("[GA4] Falha ao carregar o script.");
         },
         { once: true }
       );
@@ -131,12 +130,10 @@ export default function GoogleAnalytics() {
     script.onload = () => {
       window.gaScriptLoaded = true;
       window.gaScriptLoading = false;
-      console.info("[GA4] Script carregado com sucesso.");
     };
 
     script.onerror = () => {
       window.gaScriptLoading = false;
-      console.error("[GA4] Falha ao carregar o script.");
     };
 
     document.head.appendChild(script);

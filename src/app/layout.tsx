@@ -52,7 +52,10 @@ export const metadata: Metadata = {
       "Sites profissionais, landing pages e lojas virtuais para empresas e empreendedores. Conheça os projetos da SantzzDev.",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/opengraph-image.jpg",
+        width: 1200,
+        height: 800,
+        type: "image/jpeg",
         alt: "SantzzDev | Criação de Sites e Soluções Digitais",
       },
     ],
@@ -62,7 +65,7 @@ export const metadata: Metadata = {
     title: "SantzzDev | Desenvolvedor Web e Criação de Sites",
     description:
       "Sites profissionais, landing pages e soluções digitais para empresas e empreendedores.",
-    images: ["/opengraph-image.png"],
+    images: ["/opengraph-image.jpg"],
   },
 };
 
