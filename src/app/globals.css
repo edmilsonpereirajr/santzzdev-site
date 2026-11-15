@@ -1692,6 +1692,8 @@ button {
 
 .legal-page .footer-cookie-settings {
   padding: 10px 16px;
+  font-size: 13px;
+  color: var(--foreground);
   border: 1px solid var(--border);
   border-radius: 999px;
   background: transparent;
@@ -2281,4 +2283,29 @@ button {
 
 @media (prefers-reduced-motion: reduce) {
   .site-footer .social-links a { transition: none; }
+}
+
+/* RODAPÉ: botão de preferências de cookies no mesmo padrão dos links */
+
+.footer-cookie-settings {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #92929c;
+  font: inherit;
+  font-size: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-cookie-settings:hover { color: var(--foreground); }
+
+.footer-cookie-settings:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-cookie-settings { transition: none; }
 }
