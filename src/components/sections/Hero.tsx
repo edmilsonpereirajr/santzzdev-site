@@ -17,13 +17,14 @@ export default function Hero() {
         </h1>
 
         <p className="hero-description">
-          Conheça projetos que estou desenvolvendo, incluindo uma plataforma
-          de análise para esports e uma loja de produtos digitais.
+          Crio sites, landing pages e projetos sob medida para apresentar sua
+          marca e facilitar o contato com seus clientes. Você fala direto
+          comigo, do planejamento à publicação.
         </p>
 
         <div className="hero-actions">
-          <a className="button-primary" href="#contato">
-            Solicitar um orçamento <ArrowIcon />
+          <a className="button-primary" href="#orcamento">
+            Montar meu orçamento <ArrowIcon />
           </a>
 
           <a className="button-secondary" href="#servicos">
@@ -31,10 +32,11 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="hero-note">
-          <span className="note-line" />
-          Atendimento direto. Soluções pensadas para cada projeto.
-        </div>
+        <ul className="hero-proof">
+          <li>Você fala direto comigo</li>
+          <li>Orçamento pelo WhatsApp</li>
+          <li>Funciona no celular e no computador</li>
+        </ul>
       </div>
 
       <div
