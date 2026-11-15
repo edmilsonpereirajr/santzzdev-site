@@ -1,4 +1,5 @@
 import CookieSettingsButton from "@/components/CookieSettingsButton";
+import SocialIcon from "@/components/SocialIcon";
 import { EMAIL, GITHUB_URL, INSTAGRAM_URL } from "@/data/links";
 
 export default function Footer() {
@@ -19,14 +20,28 @@ export default function Footer() {
         <a href="/privacidade">Privacidade</a>
       </nav>
 
-      <nav aria-label="Redes e contato">
-        <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
-          Instagram
+      <nav className="social-links" aria-label="Redes e contato">
+        <a
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram da SantzzDev (abre em nova aba)"
+          title="Instagram"
+        >
+          <SocialIcon type="instagram" />
         </a>
-        <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
-          GitHub
+        <a
+          href={GITHUB_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub de Edmilson (abre em nova aba)"
+          title="GitHub"
+        >
+          <SocialIcon type="github" />
         </a>
-        <a href={`mailto:${EMAIL}`}>E-mail</a>
+        <a href={`mailto:${EMAIL}`} aria-label="Enviar e-mail" title="E-mail">
+          <SocialIcon type="mail" />
+        </a>
       </nav>
 
       <CookieSettingsButton />

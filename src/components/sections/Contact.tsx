@@ -1,5 +1,6 @@
 import ArrowIcon from "@/components/ArrowIcon";
 import ScrollReveal from "@/components/ScrollReveal";
+import SocialIcon from "@/components/SocialIcon";
 import {
   EMAIL,
   GITHUB_HANDLE,
@@ -40,20 +41,35 @@ export default function Contact() {
 
           <ul className="contact-channels" aria-label="Outros canais">
             <li>
-              <span>E-mail</span>
-              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+              <span className="contact-channel-icon">
+                <SocialIcon type="mail" />
+              </span>
+              <div>
+                <span>E-mail</span>
+                <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+              </div>
             </li>
             <li>
-              <span>Instagram</span>
-              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
-                {INSTAGRAM_HANDLE}
-              </a>
+              <span className="contact-channel-icon">
+                <SocialIcon type="instagram" />
+              </span>
+              <div>
+                <span>Instagram</span>
+                <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+                  {INSTAGRAM_HANDLE}
+                </a>
+              </div>
             </li>
             <li>
-              <span>GitHub</span>
-              <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
-                {GITHUB_HANDLE}
-              </a>
+              <span className="contact-channel-icon">
+                <SocialIcon type="github" />
+              </span>
+              <div>
+                <span>GitHub</span>
+                <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
+                  {GITHUB_HANDLE}
+                </a>
+              </div>
             </li>
           </ul>
         </div>
