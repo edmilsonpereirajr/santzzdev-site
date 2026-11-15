@@ -2181,12 +2181,31 @@ button {
 }
 
 .contact-channels li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.contact-channels li > div {
   display: grid;
   gap: 4px;
   min-width: 0;
 }
 
-.contact-channels span {
+.contact-channel-icon {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: rgba(7, 91, 255, 0.08);
+  color: var(--accent);
+}
+
+.contact-channels li > div > span {
   color: #82828c;
   font-family: var(--font-mono);
   font-size: 10px;
@@ -2237,4 +2256,29 @@ button {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 34px;
+}
+
+/* RODAPÉ: ícones de redes */
+
+.site-footer .social-links { gap: 10px; }
+
+.site-footer .social-links a {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: #a4adbd;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.site-footer .social-links a:hover {
+  border-color: rgba(7, 91, 255, 0.6);
+  background: rgba(7, 91, 255, 0.12);
+  color: var(--foreground);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-footer .social-links a { transition: none; }
 }
